@@ -20,6 +20,7 @@ configurations {
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
@@ -35,6 +36,14 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1")
     implementation("org.springframework.kafka:spring-kafka")
+
+    implementation("com.alibaba:fastjson:1.2.62")
+    implementation("org.projectlombok:lombok:1.18.10")
+    implementation("joda-time:joda-time:2.10.5")
+
+    implementation("com.abel:bigmeter-model:1.0")
+    implementation("com.abel:bigmeter-webapi:1.0")
+
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     runtimeOnly("mysql:mysql-connector-java")
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
