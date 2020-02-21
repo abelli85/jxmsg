@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    id("org.springframework.boot") version "2.2.2.RELEASE"
+    id("org.springframework.boot") version "2.0.9.RELEASE"
     id("io.spring.dependency-management") version "1.0.8.RELEASE"
     kotlin("jvm") version "1.3.61"
     kotlin("plugin.spring") version "1.3.61"
@@ -33,6 +33,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-web")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.apache.kafka:kafka-streams")
+    implementation("org.apache.kafka:kafka-clients")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1")
@@ -41,6 +42,7 @@ dependencies {
     implementation("com.alibaba:fastjson:1.2.62")
     implementation("org.projectlombok:lombok:1.18.12")
     implementation("joda-time:joda-time:2.10.5")
+    implementation("mysql:mysql-connector-java:8.0.19")
 
     implementation("com.abel:bigmeter-model:1.0")
     implementation("com.abel:bigmeter-webapi:1.0")
