@@ -39,7 +39,7 @@ dependencies {
     implementation("org.springframework.kafka:spring-kafka")
 
     implementation("com.alibaba:fastjson:1.2.62")
-    implementation("org.projectlombok:lombok:1.18.10")
+    implementation("org.projectlombok:lombok:1.18.12")
     implementation("joda-time:joda-time:2.10.5")
 
     implementation("com.abel:bigmeter-model:1.0")

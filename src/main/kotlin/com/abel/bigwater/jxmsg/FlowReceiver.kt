@@ -51,9 +51,13 @@ class FlowReceiver {
                     sampleTime = DateTime(msg.content?.timestamp!!).toDate()
                     forwardSum = msg.content?.data?.flow
                     pressure = msg.content?.data?.pressure
+                    pressureDigits = msg.content?.data?.pressure
                 }
 
-                val cnt = dataMapper!!.insertRealtime(data)
+                val cnt = dataMapper!!.updateRealtimeByValue(data)
+                if (cnt < 1) {
+                    dataMapper!!.insertRealtime(data)
+                }
                 lgr.info("persist $cnt row: {}", JSON.toJSONString(data))
             } catch (ex: Exception) {
                 lgr.error("fail to parse msg caused by {}: {}", ex.message, json)

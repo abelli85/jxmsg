@@ -26,7 +26,7 @@ internal class FlowSenderTest {
             type = "操作类型"
             content = FlowMsgContent().apply {
                 cmCode = "dev001"
-                timestamp = DateTime(2020, 1, 5, 0, 0).millis
+                timestamp = DateTime(2020, 1, 5, 1, 0).millis
                 origin = "1"
 
                 data = FlowMsgContentData().apply {
@@ -35,6 +35,8 @@ internal class FlowSenderTest {
                 }
             }
         }, "bigMeter")
+
+        lgr.info("send message to bigMeter.")
     }
 
     @Test
