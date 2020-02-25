@@ -11,7 +11,7 @@ interface DataMapper {
 
     @Insert("""
         insert into bw_realtime_data (meter_id, sample_time, end_time, duration_second,
-        water_v1,
+        water_v1, avg_flow,
         pressure1, pressure_reading,
         v_q0, v_q1, v_q2, v_q3, v_q4,
         revert_v1,
@@ -23,7 +23,7 @@ interface DataMapper {
         firm_id)
 
         values(#{extId}, #{sampleTime}, #{endTime}, #{durationSecond},
-        #{forwardSum},
+        #{forwardSum}, #{avgFlow},
         #{pressure}, #{pressureDigits},
         #{q0Sum}, #{q1Sum}, #{q2Sum}, #{q3Sum}, #{q4Sum},
         #{revertSum},
@@ -42,6 +42,7 @@ interface DataMapper {
         end_time = #{endTime},
 		duration_second = #{durationSecond},
 		water_v1 = #{forwardSum},
+        avg_flow = #{avgFlow},
 		pressure1 = #{pressure},
 		pressure_reading = #{pressureDigits},
 		v_q0 = #{q0Sum}, v_q1 = #{q1Sum}, v_q2 = #{q2Sum}, v_q3 = #{q3Sum}, v_q4 = #{q4Sum},
@@ -70,6 +71,9 @@ interface DataMapper {
             </if>
             <if test="forwardSum != null">
                 water_v1 = #{forwardSum},
+            </if>
+            <if test="avgFlow != null">
+                avg_flow = #{avgFlow},
             </if>
             <if test="pressure != null">
                 pressure1 = #{pressure},

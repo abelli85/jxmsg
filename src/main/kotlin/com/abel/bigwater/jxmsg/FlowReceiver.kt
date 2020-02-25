@@ -49,7 +49,7 @@ class FlowReceiver {
                     firmId = _firmId
                     extId = _firmCode + msg.content?.cmCode
                     sampleTime = DateTime(msg.content?.timestamp!!).toDate()
-                    forwardSum = msg.content?.data?.flow
+                    avgFlow = msg.content?.data?.flow
                     pressure = msg.content?.data?.pressure
                     pressureDigits = msg.content?.data?.pressure
                 }
