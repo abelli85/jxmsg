@@ -48,7 +48,8 @@ interface DataMapper {
 		v_q0 = #{q0Sum}, v_q1 = #{q1Sum}, v_q2 = #{q2Sum}, v_q3 = #{q3Sum}, v_q4 = #{q4Sum},
 		revert_v1 = #{revertSum},
 
-		v_all = #{forwardDigits}, base_all = #{baseDigits},
+		v_all = #{forwardDigits},
+        base_all = #{baseDigits},
 		v_revert = #{revertDigits},
 		v_pulse = #{literPulse},
 
@@ -99,14 +100,14 @@ interface DataMapper {
             <if test="revertSum != null">
                 revert_v1 = #{revertSum},
             </if>
-            <if test="forwardReading != null">
-                v_all = #{forwardReading},
+            <if test="forwardDigits != null">
+		        v_all = #{forwardDigits},
             </if>
             <if test="baseDigits != null">
                 base_all = #{baseDigits},
             </if>
-            <if test="revertSum != null">
-                v_revert = #{revertSum},
+            <if test="revertDigits != null">
+                v_revert = #{revertDigits},
             </if>
             <if test="literPulse != null">
                 v_pulse = #{literPulse},

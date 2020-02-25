@@ -39,4 +39,8 @@ class FlowMsgContentData {
     var pressure: Double? = null
 
     var flow: Double? = null
+
+    var forwardFlow: Double? = null
+
+    var reverseFlow: Double? = null
 }

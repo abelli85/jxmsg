@@ -41,6 +41,14 @@ internal class FlowSenderTest {
     }
 
     @Test
+    fun sendRealMsg1() {
+        val msg = """{"businessKey":"bigMeter","content":{"data":{"forwardFlow":68997,"reverseFlow":-99,"reading":-99,"pressure":0.145,"valveStatus":-99,"flow":10.527,"voltage":-99},"origin":"1","cmCode":"110040590001","timestamp":1581909300000}}"""
+        lgr.info("about to send msg1: {}", msg)
+        sender!!.kafkaTemp!!.send("bigMeter", msg)
+        lgr.info("sent real msg1")
+    }
+
+    @Test
     fun testDataMapper() {
         val lst = dataMapper!!.selectRealtime(DataParam(meterId = "jx-dev001", extId = "jx-dev001"))
 
