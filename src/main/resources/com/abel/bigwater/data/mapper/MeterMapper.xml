@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.abel.bigwater.data.mapper.MeterMapper">
+    <select id="selectMeterBrand" resultType="com.abel.bigwater.model.BwMeterBrand">
+
+        SELECT meter_brand_id AS brand,
+        meter_brand_name AS brandName
+        FROM bw_meter_brand
+        ORDER BY meter_order
+    </select>
+
+    <select id="selectRemoteBrand" resultType="com.abel.bigwater.model.BwRemoteBrand">
+
+        SELECT remote_brand_id AS brand,
+        remote_brand_name AS brandName
+        FROM bw_remote_brand
+        ORDER BY remote_order
+    </select>
+
+    <insert id="insertMeter" parameterType="com.abel.bigwater.model.zone.ZoneMeter" useGeneratedKeys="false">
+
+        INSERT INTO bw_meter (
+        meter_id, user_code, meter_code,
+        meter_order,
+        ext_id,
+        meter_name, meter_location, install_date,
+        q1, q2, q3, q4, q1r, q2r, q3r, q4r,
+        meter_size, meter_model, meter_type_id, is_charge,
+        in_out,
+        create_by, create_date, update_by, update_date,
+        dma_id, meter_brand_id, remote_brand_id,
+        rtu_id,
+        pressure_range,
+        pressure_max_limit,
+        pressure_min_limit,
+        power_type,
+        meter_status,
+        admin_mobile,
+        last_calib,
+        firm_id
+        , water_price
+        , service_area
+        , service_population
+        , contact_number
+        , rtu_code
+        , rtu_addr
+        , rtu_install_date
+        , rtu_install_person
+        , rtu_contact
+        , comm_card
+        , remote_model
+        , remote_memo
+        , comm_isp
+        , meter_memo
+        , meter_loc
+        )
+        values(
+        #{id}, #{userCode}, #{meterCode},
+        #{meterOrder},
+        #{extId},
+        #{name}, #{location}, #{installDate}, #{q1}, #{q2}, #{q3}, #{q4}, #{q1r}, #{q2r}, #{q3r}, #{q4r},
+        #{size}, #{model}, #{typeId}, #{chargable},
+        #{inOutput},
+        #{createBy}, #{createDate}, #{updateBy}, #{updateDate},
+        #{dmaId}, #{meterBrandId}, #{remoteBrandId},
+        #{rtuId}, #{pressureRange}, #{pressureMaxLimit}, #{pressureMinLimit},
+        #{powerType}, #{meterStatus}, #{adminMobile}, #{lastCalib},
+        #{firmId}
+        , #{waterPrice}, #{serviceArea}, #{servicePopulation}, #{contactNumber}
+        , #{rtuCode}, #{rtuAddr}, #{rtuInstallDate}, #{rtuInstallPerson}, #{rtuContact}
+        , #{commCard}, #{remoteModel}, #{remoteMemo}, #{commIsp}
+        , #{memo}
+        , ST_GeomFromText(#{meterLoc})
+        )
+    </insert>
+
+    <delete id="deleteMeter" parameterType="java.util.List">
+
+        DELETE FROM bw_meter
+        WHERE meter_id IN
+        <foreach collection='midList' item='mid' index='idx' open='(' separator=',' close=')'>
+            #{mid}
+        </foreach>
+    </delete>
+
+    <update id="updateMeter" parameterType="com.abel.bigwater.model.zone.ZoneMeter">
+
+        UPDATE bw_meter
+        <set>
+            <if test="userCode != null">
+                user_code = #{userCode},
+            </if>
+            <if test="meterCode != null">
+                meter_code = #{meterCode},
+            </if>
+            <if test="name != null">
+                meter_name = #{name},
+            </if>
+            <if test="meterOrder != null">
+                meter_order = #{meterOrder},
+            </if>
+            <if test="extId != null">
+                ext_id = #{extId},
+            </if>
+            <if test="location != null">
+                meter_location = #{location},
+            </if>
+            <if test="installDate != null">
+                install_date = #{installDate},
+            </if>
+            <if test="q1 != null">
+                q1 = #{q1},
+            </if>
+            <if test="q2 != null">
+                q2 = #{q2},
+            </if>
+            <if test="q3 != null">
+                q3 = #{q3},
+            </if>
+            <if test="q4 != null">
+                q4 = #{q4},
+            </if>
+            <if test="q1r != null">
+                q1r = #{q1r},
+            </if>
+            <if test="q2r != null">
+                q2r = #{q2r},
+            </if>
+            <if test="q3r != null">
+                q3r = #{q3r},
+            </if>
+            <if test="q4r != null">
+                q4r = #{q4r},
+            </if>
+            <if test="size != null">
+                meter_size = #{size},
+            </if>
+            <if test="model != null">
+                meter_model = #{model},
+            </if>
+            <if test="typeId != null">
+                meter_type_id = #{typeId},
+            </if>
+            <if test="chargable != null">
+                is_charge = #{chargable},
+            </if>
+            <if test="inOutput != null">
+                in_out = #{inOutput},
+            </if>
+            <if test="createBy != null">
+                create_by = #{createBy},
+            </if>
+            <if test="createDate != null">
+                create_date = #{createDate},
+            </if>
+            <if test="updateBy != null">
+                update_by = #{updateBy},
+            </if>
+            <if test="updateDate != null">
+                update_date = #{updateDate},
+            </if>
+            <if test="dmaId != null">
+                dma_id = #{dmaId},
+            </if>
+            <if test="meterBrandId != null">
+                meter_brand_id = #{meterBrandId},
+            </if>
+            <if test="remoteBrandId != null">
+                remote_brand_id = #{remoteBrandId},
+            </if>
+            <if test="rtuId != null">
+                rtu_id = #{rtuId},
+            </if>
+            <if test="pressureRange != null">
+                pressure_range = #{pressureRange},
+            </if>
+            <if test="pressureMaxLimit != null">
+                pressure_max_limit = #{pressureMaxLimit},
+            </if>
+            <if test="pressureMinLimit != null">
+                pressure_min_limit = #{pressureMinLimit},
+            </if>
+            <if test="powerType != null">
+                power_type = #{powerType},
+            </if>
+            <if test="meterStatus != null">
+                meter_status = #{meterStatus},
+            </if>
+            <if test="adminMobile != null">
+                admin_mobile = #{adminMobile},
+            </if>
+            <if test="lastCalib != null">
+                last_calib = #{lastCalib},
+            </if>
+            <if test="firmId != null">
+                firm_id = #{firmId}
+            </if>
+            <if test="waterPrice != null">
+                , water_price = #{waterPrice}
+            </if>
+            <if test="serviceArea != null">
+                , service_area = #{serviceArea}
+            </if>
+            <if test="servicePopulation != null">
+                , service_population = #{servicePopulation}
+            </if>
+            <if test="contactNumber != null">
+                , contact_number = #{contactNumber}
+            </if>
+            <if test="rtuCode != null">
+                , rtu_code = #{rtuCode}
+            </if>
+            <if test="rtuAddr != null">
+                , rtu_addr = #{rtuAddr}
+            </if>
+            <if test="rtuInstallDate != null">
+                , rtu_install_date = #{rtuInstallDate}
+            </if>
+            <if test="rtuInstallPerson != null">
+                , rtu_install_person = #{rtuInstallPerson}
+            </if>
+            <if test="rtuContact != null">
+                , rtu_contact = #{rtuContact}
+            </if>
+            <if test="commCard != null">
+                , comm_card = #{commCard}
+            </if>
+            <if test="remoteModel != null">
+                , remote_model = #{remoteModel}
+            </if>
+            <if test="remoteMemo != null">
+                , remote_memo = #{remoteMemo}
+            </if>
+            <if test="commIsp != null">
+                , comm_isp = #{commIsp}
+            </if>
+            <if test="memo != null">
+                , meter_memo = #{memo}
+            </if>
+            <if test='meterLoc != null'>
+                , meter_loc = ST_GeomFromText(#{meterLoc})
+            </if>
+        </set>
+
+        WHERE meter_id = #{id}
+    </update>
+
+    <update id="updateMeterLoc" parameterType="com.abel.bigwater.model.zone.ZoneMeter">
+
+        UPDATE bw_meter SET
+            meter_loc = ST_GeomFromText(#{meterLoc})
+        WHERE meter_id = #{id}
+    </update>
+
+    <select id="selectMeter" parameterType="com.abel.bigmeter.service.MeterParam" resultType="com.abel.bigwater.model.zone.ZoneMeter">
+
+        SELECT meter_id as id, user_code AS userCode,
+        meter_code AS meterCode,
+        meter_order AS meterOrder,
+        ext_id AS extId,
+        meter_name as name, meter_location as location, install_date as installDate,
+        q1, q2, q3, q4, q1r, q2r, q3r, q4r,
+        meter_size as size, meter_model as model, meter_type_id as typeId, is_charge as chargable,
+        in_out AS inOutput,
+        create_by as createBy, create_date as createDate, update_by as updateBy, update_date as updateDate,
+        dma_id as dmaId,
+        meter_brand_id as meterBrandId,
+        remote_brand_id as remoteBrandId,
+        rtu_id AS rtuId,
+        pressure_range AS pressureRange,
+        pressure_max_limit AS pressureMaxLimit,
+        pressure_min_limit AS pressureMinLimit,
+        power_type AS powerType,
+        meter_status AS meterStatus,
+        admin_mobile AS adminMobile,
+        last_calib AS lastCalib,
+        ST_AsText(meter_loc) AS meterLoc,
+        firm_id AS firmId
+        , water_price AS waterPrice
+        , service_area AS serviceArea
+        , service_population AS servicePopulation
+        , contact_number AS contactNumber
+        , rtu_code AS rtuCode
+        , rtu_addr AS rtuAddr
+        , rtu_install_date AS rtuInstallDate
+        , rtu_install_person AS rtuInstallPerson
+        , rtu_contact AS rtuContact
+        , comm_card AS commCard
+        , remote_model AS remoteModel
+        , remote_memo AS remoteMemo
+        , comm_isp AS commIsp
+        , meter_memo AS memo
+        FROM bw_meter
+        <where>
+            <if test="meterId != null">
+                (meter_id LIKE #{meterId} OR ext_id LIKE #{meterId})
+            </if>
+            <if test="userCode != null">
+                AND user_code LIKE #{userCode}
+            </if>
+            <if test="meterName != null">
+                AND meter_name LIKE #{meterName}
+            </if>
+            <if test="extId != null">
+                AND ext_id LIKE #{extId}
+            </if>
+            <if test="dmaId != null">
+                AND dma_id LIKE #{dmaId}
+            </if>
+            <if test="typeId != null">
+                AND meter_type_id = #{typeId}
+            </if>
+            <if test="installDate1 != null">
+                AND install_date &gt;= #{installDate1}
+            </if>
+            <if test="installDate2 != null">
+                AND install_date &lt; #{installDate2}
+            </if>
+            <if test="location != null">
+                AND meter_location LIKE #{location}
+            </if>
+            <if test="meterBrandId != null">
+                AND meter_brand_id LIKE #{meterBrandId}
+            </if>
+            <if test="remoteBrandId != null">
+                AND remote_brand_id LIKE #{remoteBrandId}
+            </if>
+            <if test="firmId != null">
+                AND firm_id LIKE #{firmId}
+            </if>
+            <if test='meterIdList != null'>
+                AND meter_id IN
+                <foreach collection='meterIdList' item='mid' open='(' separator=',' close=')'>
+                    #{mid}
+                </foreach>
+            </if>
+        </where>
+        ORDER BY meter_id
+        LIMIT 0, 15000
+    </select>
+
+    <select id="selectMeterText" parameterType="com.abel.bigmeter.service.MeterParam" resultType="com.abel.bigwater.model.zone.ZoneMeter">
+
+        SELECT meter_id as id, user_code AS userCode,
+        meter_code AS meterCode,
+        meter_order AS meterOrder,
+        ext_id AS extId,
+        meter_name as name, meter_location as location, install_date as installDate,
+        q1, q2, q3, q4, q1r, q2r, q3r, q4r,
+        meter_size as size, meter_model as model, meter_type_id as typeId, is_charge as chargable,
+        in_out AS inOutput,
+        create_by as createBy, create_date as createDate, update_by as updateBy, update_date as updateDate,
+        dma_id as dmaId,
+        meter_brand_id as meterBrandId,
+        remote_brand_id as remoteBrandId,
+        rtu_id AS rtuId,
+        pressure_range AS pressureRange,
+        pressure_max_limit AS pressureMaxLimit,
+        pressure_min_limit AS pressureMinLimit,
+        power_type AS powerType,
+        meter_status AS meterStatus,
+        admin_mobile AS adminMobile,
+        last_calib AS lastCalib,
+        ST_AsText(meter_loc) AS meterLoc,
+        firm_id AS firmId
+        , water_price AS waterPrice
+        , service_area AS serviceArea
+        , service_population AS servicePopulation
+        , contact_number AS contactNumber
+        , rtu_code AS rtuCode
+        , rtu_addr AS rtuAddr
+        , rtu_install_date AS rtuInstallDate
+        , rtu_install_person AS rtuInstallPerson
+        , rtu_contact AS rtuContact
+        , comm_card AS commCard
+        , remote_model AS remoteModel
+        , remote_memo AS remoteMemo
+        , comm_isp AS commIsp
+        , meter_memo AS memo
+        FROM bw_meter
+        WHERE MATCH(meter_id, user_code, meter_code, meter_name, meter_location, `meter_memo`, `remote_memo`, `rtu_addr`, `rtu_install_person`, `ext_id`)
+        AGAINST(#{keywords} IN BOOLEAN MODE)
+        <if test='firmId != null'>
+            AND firm_id LIKE #{firmId}
+        </if>
+    </select>
+
+    <select id="selectParentMeter" parameterType="java.util.Map" resultType="com.abel.bigwater.model.zone.ZoneMeter">
+
+        SELECT meter_id as id, user_code AS userCode,
+        meter_code AS meterCode,
+        meter_order AS meterOrder,
+        ext_id AS extId,
+        meter_name as name, meter_location as location, install_date as installDate,
+        q1, q2, q3, q4, q1r, q2r, q3r, q4r,
+        meter_size as size, meter_model as model, meter_type_id as typeId, is_charge as chargable,
+        in_out AS inOutput,
+        create_by as createBy, create_date as createDate, update_by as updateBy, update_date as updateDate,
+        dma_id as dmaId,
+        meter_brand_id as meterBrandId,
+        remote_brand_id as remoteBrandId,
+        rtu_id AS rtuId,
+        pressure_range AS pressureRange,
+        pressure_max_limit AS pressureMaxLimit,
+        pressure_min_limit AS pressureMinLimit,
+        power_type AS powerType,
+        meter_status AS meterStatus,
+        admin_mobile AS adminMobile,
+        last_calib AS lastCalib,
+        ST_AsText(meter_loc) AS meterLoc,
+        firm_id AS firmId
+        , water_price AS waterPrice
+        , service_area AS serviceArea
+        , service_population AS servicePopulation
+        , contact_number AS contactNumber
+        , rtu_code AS rtuCode
+        , rtu_addr AS rtuAddr
+        , rtu_install_date AS rtuInstallDate
+        , rtu_install_person AS rtuInstallPerson
+        , rtu_contact AS rtuContact
+        , comm_card AS commCard
+        , remote_model AS remoteModel
+        , remote_memo AS remoteMemo
+        , comm_isp AS commIsp
+        , meter_memo AS memo
+        FROM bw_meter
+        <where>
+            meter_type_id = 'CHECK'
+            <if test="firmId != null">
+                AND firm_id LIKE #{firmId}
+            </if>
+        </where>
+        ORDER BY meter_id
+        LIMIT 0, 1500
+    </select>
+
+    <select id="selectParentMeterByDmaId" parameterType="string" resultType="com.abel.bigwater.model.zone.ZoneMeter">
+
+        SELECT meter_id as id, user_code AS userCode,
+        meter_code AS meterCode,
+        meter_order AS meterOrder,
+        ext_id AS extId,
+        meter_name as name, meter_location as location, install_date as installDate,
+        q1, q2, q3, q4, q1r, q2r, q3r, q4r,
+        meter_size as size, meter_model as model, meter_type_id as typeId, is_charge as chargable,
+        in_out AS inOutput,
+        create_by as createBy, create_date as createDate, update_by as updateBy, update_date as updateDate,
+        dma_id as dmaId,
+        meter_brand_id as meterBrandId,
+        remote_brand_id as remoteBrandId,
+        rtu_id AS rtuId,
+        pressure_range AS pressureRange,
+        pressure_max_limit AS pressureMaxLimit,
+        pressure_min_limit AS pressureMinLimit,
+        power_type AS powerType,
+        meter_status AS meterStatus,
+        admin_mobile AS adminMobile,
+        last_calib AS lastCalib,
+        ST_AsText(meter_loc) AS meterLoc,
+        firm_id AS firmId
+        , water_price AS waterPrice
+        , service_area AS serviceArea
+        , service_population AS servicePopulation
+        , contact_number AS contactNumber
+        , rtu_code AS rtuCode
+        , rtu_addr AS rtuAddr
+        , rtu_install_date AS rtuInstallDate
+        , rtu_install_person AS rtuInstallPerson
+        , rtu_contact AS rtuContact
+        , comm_card AS commCard
+        , remote_model AS remoteModel
+        , remote_memo AS remoteMemo
+        , comm_isp AS commIsp
+        , meter_memo AS memo
+        FROM bw_meter
+        WHERE meter_type_id = 'CHECK'
+        AND dma_id = #{dmaId}
+        ORDER BY meter_id
+        LIMIT 0, 1500
+    </select>
+
+    <select id="selectDma" parameterType="com.abel.bigmeter.service.ZoneParam" resultType="com.abel.bigwater.model.BwDma">
+
+        SELECT
+        d.dma_id as id,
+        d.dma_name as name,
+        d.dma_location as location,
+        d.dma_r AS r,
+        d.dma_count as count,
+        d.user_id as userId,
+        d.firm_id as firmId
+        , d.sum_user AS sumUser
+        , d.dma_type AS dmaType
+        , d.legal_lnf AS legalLnf
+        , ST_AsText(dl.dma_loc) AS dmaLoc
+        , ST_AsText(dl.dma_region) AS dmaRegion
+        FROM bw_dma d LEFT JOIN bw_dma_loc dl ON d.dma_id = dl.dma_id
+        <where>
+            <if test='keywords != null'>
+                MATCH (d.dma_id, d.dma_name, d.dma_location)
+                AGAINST (#{keywords} IN BOOLEAN MODE)
+            </if>
+            <if test="firmId != null">
+                AND d.firm_id LIKE #{firmId,jdbcType=VARCHAR}
+            </if>
+            <if test="dmaId != null">
+                AND d.dma_id LIKE #{dmaId}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectDmaById" parameterType="com.abel.bigmeter.service.ZoneParam" resultType="com.abel.bigwater.model.BwDma">
+
+        SELECT dma_id as id,
+        dma_name as name,
+        dma_location as location,
+        dma_r AS r,
+        dma_count as count,
+        user_id as userId,
+        firm_id as firmId
+        , sum_user AS sumUser
+        , dma_type AS dmaType
+        , legal_lnf AS legalLnf
+        FROM bw_dma
+        WHERE dma_id = #{dmaId}
+    </select>
+
+    <insert id="insertDma" parameterType="com.abel.bigwater.model.BwDma">
+        insert into bw_dma (dma_id, dma_name, dma_location, dma_r, dma_count, user_id, firm_id
+        , sum_user
+        , dma_type
+        , legal_lnf
+        , dma_status
+        , create_by
+        , create_date
+        , update_by
+        , update_date
+
+        , `cnt_user`
+        , `avg_month_water`
+        , `dev_month_water`
+        , `cnt_month`
+        , `avg_mnf_total`
+        , `dev_mnf_total`
+        , `cnt_mnf`
+
+        , online_date
+        )
+        values(#{id}, #{name}, #{location}, #{r}, #{count}, #{userId}, #{firmId}
+        , #{sumUser}
+        , #{dmaType}
+        , #{legalLnf}
+        , #{status}
+        , #{createBy}
+        , #{createDate}
+        , #{updateBy}
+        , #{updateDate}
+
+        , #{cntUser}
+        , #{avgMonthWater}
+        , #{devMonthWater}
+        , #{cntMonth}
+        , #{avgMnfTotal}
+        , #{devMnfTotal}
+        , #{cntMnf}
+
+        , #{onlineDate}
+        )
+
+    </insert>
+
+    <update id="updateDma" parameterType="com.abel.bigwater.model.BwDma">
+        UPDATE bw_dma
+        <set>
+            <if test="name != null">
+                dma_name = #{name},
+            </if>
+            <if test="location != null">
+                dma_location = #{location},
+            </if>
+            <if test="r != null">
+                dma_r = #{r},
+            </if>
+            <if test="count != null">
+                dma_count = #{count},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId},
+            </if>
+            <if test="firmId != null">
+                firm_id = #{firmId}
+            </if>
+            <if test="sumUser != null">
+                , sum_user = #{sumUser}
+            </if>
+            <if test="dmaType != null">
+                , dma_type = #{dmaType}
+            </if>
+            <if test="legalLnf != null">
+                , legal_lnf = #{legalLnf}
+            </if>
+            <if test="status != null">
+                , dma_status = #{status}
+            </if>
+            <if test="createBy != null">
+                , create_by = #{createBy}
+            </if>
+            <if test="createDate != null">
+                , create_date = #{createDate}
+            </if>
+            <if test="cntUser != null">
+                , cnt_user = #{cntUser}
+            </if>
+            <if test="avgMonthWater != null">
+                , avg_month_water = #{avgMonthWater}
+            </if>
+            <if test="devMonthWater != null">
+                , dev_month_water = #{devMonthWater}
+            </if>
+            <if test="cntMonth != null">
+                , cnt_month = #{cntMonth}
+            </if>
+            <if test="avgMnfTotal != null">
+                , avg_mnf_total = #{avgMnfTotal}
+            </if>
+            <if test="devMnfTotal != null">
+                , dev_mnf_total = #{devMnfTotal}
+            </if>
+            <if test="cntMnf != null">
+                , cnt_mnf = #{cntMnf}
+            </if>
+            <if test="onlineDate != null">
+                , online_date = #{onlineDate}
+            </if>
+            , update_by = #{updateBy}
+            , update_date = #{updateDate}
+        </set>
+        where dma_id = #{id}
+
+    </update>
+
+</mapper>
