@@ -1,6 +1,9 @@
 package com.abel.bigwater.jxmsg
 
 import com.abel.bigwater.data.mapper.MeterMapper
+import com.abel.bigwater.jxwg.AuthUserResult
+import com.fasterxml.jackson.databind.DeserializationFeature
+import com.fasterxml.jackson.databind.ObjectMapper
 import org.apache.http.HttpStatus
 import org.apache.http.client.methods.RequestBuilder
 import org.apache.http.impl.client.HttpClients
@@ -16,6 +19,9 @@ import org.springframework.stereotype.Component
 class ProfileTask {
     @Autowired
     var meterMapper: MeterMapper? = null
+
+    @Value("\${jx.auth-url}")
+    var authUrl: String? = null
 
     @Value("\${jx.profile-url}")
     var profileUrl: String? = null
@@ -58,22 +64,31 @@ class ProfileTask {
 
     @Scheduled(fixedRate = 30 * 86400 * 1000L, initialDelay = 20 * 1000L)
     fun retrieveProfileOnce() {
-        val post = RequestBuilder.post(profileUrl!!)
+        val post = RequestBuilder.post(authUrl!!)
                 .addHeader(key1, v1)
                 .addHeader(key2, v2)
                 .addHeader(key3, v3)
                 .addHeader(key4, v4)
                 .addHeader(key5, v5)
                 .addHeader(key6, v6)
+                .addHeader("Content-Type", "application/json;charset=UTF-8")
+                .addHeader("Accept", "application/json;charset=UTF-8")
                 .build()
         lgr.info("post: ${post}")
 
         val hc = HttpClients.createDefault()
-        val resp = hc.execute(post)
-        lgr.info("profile request result: ${resp.statusLine}")
-        if (resp.statusLine.statusCode <= HttpStatus.SC_MULTIPLE_CHOICES) {
-            val body = resp.entity.content.reader(Charsets.UTF_8).readText()
-            lgr.info("profile body: ${body}")
+        var auth: AuthUserResult? = null
+        val resp = hc.execute(post).also {
+            val text = it.entity.content.reader(Charsets.UTF_8).readText()
+
+            if (it.statusLine.statusCode <= HttpStatus.SC_MULTIPLE_CHOICES) {
+                lgr.info("status: ${it.statusLine}\n...${text.takeLast(300)}")
+            } else {
+                lgr.info("status failure: ${it.statusLine}\n${text}")
+            }
+
+            auth = ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+                    .readValue(text, AuthUserResult::class.java)
         }
     }
 

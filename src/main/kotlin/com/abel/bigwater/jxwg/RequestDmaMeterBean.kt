@@ -57,7 +57,7 @@ class RequestDmaMeterBean {
     @Autowired
     var tokenRequest: UserInfoRequestBean? = null
 
-    @Scheduled(initialDelay = 60 * 1000, fixedDelay = 24 * 3600 * 1000)
+//    @Scheduled(initialDelay = 60 * 1000, fixedDelay = 24 * 3600 * 1000)
     fun requestDmaMeter() {
         lgr.info("About to execute request: ${reqList?.reqList?.size}")
         val authUser = tokenRequest?.fetchUserInfo()

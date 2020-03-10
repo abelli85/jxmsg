@@ -1,0 +1,7103 @@
+{
+  "resultCode": "0000",
+  "belongOrg": {
+    "id": 2,
+    "orgCode": "1|2",
+    "fullName": "非江西水务集团人员",
+    "shortName": "兼职人员",
+    "parentId": 1,
+    "extendAttrs": {},
+    "creator": {
+      "id": 1,
+      "name": "水务数据同步管理员"
+    },
+    "creatTime": "20171214101030+0000",
+    "operateTime": 1513246240000,
+    "pathName": "江西省水务集团有限公司/非江西水务集团人员"
+  },
+  "belongEnterprise": {
+    "id": 1,
+    "orgCode": "1",
+    "fullName": "江西省水务集团有限公司",
+    "shortName": "江西水务集团",
+    "parentId": 0,
+    "domain": "www.jiangxiwater.com",
+    "extendAttrs": {},
+    "creator": {
+      "id": 1,
+      "name": "水务数据同步管理员"
+    },
+    "creatTime": "20170228100032+0000",
+    "operateTime": 1533789727378,
+    "modifier": {
+      "id": 1,
+      "name": "水务数据同步管理员"
+    },
+    "modifyTime": "20180809044207+0000",
+    "southDomain": "www.jiangxiwater.com",
+    "pathName": "江西省水务集团有限公司",
+    "northPort": 9990,
+    "southPort": "38080,38443",
+    "pushPort": 23880,
+    "emmCreate": "1"
+  },
+  "userInfo": {
+    "id": 3420,
+    "name": "liuj",
+    "password": "6c5544797a91115dc3330ebd003851d2a6cd0ab669ab2b2e20fb9581eca958b3",
+    "realName": "刘佳",
+    "tel": "13000000000",
+    "enterprise": {
+      "id": 1
+    },
+    "org": {
+      "id": 2
+    },
+    "status": "1",
+    "modifyTime": "20180817083915+0000",
+    "operateTime": 1534495155072,
+    "sex": "0",
+    "email": "liuj@emrubik.com",
+    "token": "b8ec66b7-88d1-48d2-85c3-246244e48c0a",
+    "extendAttrs": {},
+    "telphone": "13000000000"
+  },
+  "roleInfos": [
+    {
+      "roleId": 1,
+      "roleName": "DMA设备查询角色",
+      "orgId": 1,
+      "permissionList": [
+        {
+          "id": 35,
+          "appId": 2,
+          "parentId": 0,
+          "name": "DMA设备查询",
+          "permission": "dma",
+          "remarks": "DMA设备查询",
+          "option": ""
+        },
+        {
+          "id": 36,
+          "appId": 2,
+          "parentId": 0,
+          "name": "机构管理",
+          "permission": "orgmng",
+          "remarks": "机构管理",
+          "option": ""
+        },
+        {
+          "id": 37,
+          "appId": 2,
+          "parentId": 0,
+          "name": "机构列表",
+          "permission": "orgmng:orglst",
+          "remarks": "机构列表",
+          "option": "{\"matchUrl\":[{\"url\":\"/uc/orgs\",\"method\":\"GET\"},{\"url\":\"/uc/orgs/*\",\"method\":\"GET\"},{\"url\":\"/uc/orgs/**/*\",\"method\":\"GET\"},{\"url\":\"/uc/orgs/extendattr/*\",\"method\":\"GET\"},{\"url\":\"/uc/orgs/*/logo\",\"method\":\"GET\"},{\"url\":\"/uc/orgs/*/orgTree\",\"method\":\"GET\"},{\"url\":\"/uc/enterprises/*\",\"method\":\"GET\"},{\"url\":\"/uc/enterprises\",\"method\":\"GET\"},{\"url\":\"/uc/enterprises/extendattr/*\",\"method\":\"GET\"},{\"url\":\"/uc/orgtypes\",\"method\":\"GET\"}]}"
+        },
+        {
+          "id": 41,
+          "appId": 2,
+          "parentId": 0,
+          "name": "用户管理",
+          "permission": "accmng:usrmng",
+          "remarks": "用户管理",
+          "option": ""
+        },
+        {
+          "id": 42,
+          "appId": 2,
+          "parentId": 0,
+          "name": "用户列表",
+          "permission": "accmng:usrmng:usrlst",
+          "remarks": "用户列表",
+          "option": "{\"matchUrl\":[{\"url\":\"/uc/users\",\"method\":\"GET\"},{\"url\":\"/uc/users/*/parttimejob\",\"method\":\"GET\"},{\"url\":\"/uc/users/*\",\"method\":\"GET\"},{\"url\":\"/uc/users/username/*\",\"method\":\"GET\"}]}"
+        },
+        {
+          "id": 46,
+          "appId": 2,
+          "parentId": 0,
+          "name": "角色管理",
+          "permission": "accmng:usrrolemng",
+          "remarks": "角色管理",
+          "option": ""
+        },
+        {
+          "id": 47,
+          "appId": 2,
+          "parentId": 0,
+          "name": "角色列表",
+          "permission": "accmng:usrmng:usrrole",
+          "remarks": "角色列表",
+          "option": "{\"matchUrl\":[{\"url\":\"/uc/userroles\",\"method\":\"GET\"},{\"url\":\"/uc/userroles/*\",\"method\":\"GET\"}]}"
+        },
+        {
+          "id": 48,
+          "appId": 2,
+          "parentId": 0,
+          "name": "角色添加",
+          "permission": "accmng:usrmng:usrrole:add",
+          "remarks": "角色添加",
+          "option": "{\"matchUrl\":[{\"url\":\"/uc/userroles\",\"method\":\"POST\"}]}"
+        },
+        {
+          "id": 49,
+          "appId": 2,
+          "parentId": 0,
+          "name": "角色修改",
+          "permission": "accmng:usrmng:usrrole:edt",
+          "remarks": "角色修改",
+          "option": "{\"matchUrl\":[{\"url\":\"/uc/userroles\",\"method\":\"PUT\"}]}"
+        },
+        {
+          "id": 50,
+          "appId": 2,
+          "parentId": 0,
+          "name": "角色删除",
+          "permission": "accmng:usrmng:usrrole:del",
+          "remarks": "角色删除",
+          "option": "{\"matchUrl\":[{\"url\":\"/uc/userroles\",\"method\":\"DELETE\"}]}"
+        },
+        {
+          "id": 51,
+          "appId": 2,
+          "parentId": 0,
+          "name": "应用管理",
+          "permission": "appmng",
+          "remarks": "应用管理",
+          "option": ""
+        },
+        {
+          "id": 52,
+          "appId": 2,
+          "parentId": 0,
+          "name": "应用列表",
+          "permission": "appmng:applst",
+          "remarks": "应用列表",
+          "option": "{\"matchUrl\":[{\"url\":\"/uc/appSystem\",\"method\":\"GET\"},{\"url\":\"/uc/appSystem/*\",\"method\":\"GET\"},{\"url\":\"/uc/appSystem/users/*\",\"method\":\"GET\"}]}"
+        },
+        {
+          "id": 56,
+          "appId": 2,
+          "parentId": 0,
+          "name": "权限管理",
+          "permission": "accmng:permissionmng",
+          "remarks": "权限管理",
+          "option": ""
+        },
+        {
+          "id": 57,
+          "appId": 2,
+          "parentId": 0,
+          "name": "权限列表",
+          "permission": "accmng:permissionmng:lst",
+          "remarks": "权限列表",
+          "option": "{\"matchUrl\":[{\"url\":\"/uc/userpermissions/app/*\",\"method\":\"GET\"},{\"url\":\"/uc/permissions/*\",\"method\":\"GET\"},{\"url\":\"/uc/adminpermissions/*\",\"method\":\"GET\"},{\"url\":\"/uc/userpermissions/*\",\"method\":\"GET\"},{\"url\":\"/uc/allpermissions/*\",\"method\":\"GET\"}]}"
+        },
+        {
+          "id": 58,
+          "appId": 2,
+          "parentId": 0,
+          "name": "dma设备数据查询",
+          "permission": "dma:device",
+          "remarks": "dma设备数据查询",
+          "option": "{\"matchUrl\":[{\"url\":\"/dma/devices/dev_sub_dma\",\"method\":\"GET\"},{\"url\":\"/dma/devices/dev_rtu_dma\",\"method\":\"GET\"}]}"
+        }
+      ],
+      "bindOrgList": [
+        {
+          "id": 1,
+          "orgCode": "1",
+          "fullName": "江西省水务集团有限公司",
+          "extendAttrs": {}
+        }
+      ],
+      "bindAllOrgList": [
+        {
+          "id": 2,
+          "orgCode": "1|2",
+          "fullName": "非江西水务集团人员",
+          "parentId": 1,
+          "extendAttrs": {}
+        },
+        {
+          "id": 64,
+          "orgCode": "1|20|27|64",
+          "fullName": "营销分公司",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 10,
+          "orgCode": "1|3|10",
+          "fullName": "工程技术部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 14,
+          "orgCode": "1|3|14",
+          "fullName": "财务部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 17,
+          "orgCode": "1|3|17",
+          "fullName": "资本运营部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 19,
+          "orgCode": "1|3|19",
+          "fullName": "其他",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 21,
+          "orgCode": "1|20|21",
+          "fullName": "公司领导",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 16,
+          "orgCode": "1|3|16",
+          "fullName": "人力资源部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 25,
+          "orgCode": "1|20|25",
+          "fullName": "运营管理部",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 22,
+          "orgCode": "1|20|22",
+          "fullName": "人力行政部",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 26,
+          "orgCode": "1|20|26",
+          "fullName": "信息管理部",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 28,
+          "orgCode": "1|20|27|28",
+          "fullName": "公司领导",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 23,
+          "orgCode": "1|20|23",
+          "fullName": "财务部",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 9,
+          "orgCode": "1|3|9",
+          "fullName": "建设管理部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 11,
+          "orgCode": "1|3|10|11",
+          "fullName": "专家顾问组",
+          "parentId": 10,
+          "extendAttrs": {}
+        },
+        {
+          "id": 13,
+          "orgCode": "1|3|13",
+          "fullName": "投资发展部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 15,
+          "orgCode": "1|3|15",
+          "fullName": "信息部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 12,
+          "orgCode": "1|3|12",
+          "fullName": "监察审计部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 4,
+          "orgCode": "1|3|4",
+          "fullName": "董事会办公室",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 29,
+          "orgCode": "1|20|27|29",
+          "fullName": "办公室",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 30,
+          "orgCode": "1|20|27|29|30",
+          "fullName": "档案室",
+          "parentId": 29,
+          "extendAttrs": {}
+        },
+        {
+          "id": 31,
+          "orgCode": "1|20|27|31",
+          "fullName": "党群工作部",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 33,
+          "orgCode": "1|20|27|33",
+          "fullName": "人力资源部",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 34,
+          "orgCode": "1|20|27|34",
+          "fullName": "运营管理部",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 35,
+          "orgCode": "1|20|27|35",
+          "fullName": "监察审计部",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 5,
+          "orgCode": "1|3|5",
+          "fullName": "公司领导",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 36,
+          "orgCode": "1|20|27|36",
+          "fullName": "安全监理部",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 37,
+          "orgCode": "1|20|27|37",
+          "fullName": "景德镇市自来水公司安装所",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 39,
+          "orgCode": "1|20|27|39",
+          "fullName": "其他",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 40,
+          "orgCode": "1|20|27|39|40",
+          "fullName": "病退",
+          "parentId": 39,
+          "extendAttrs": {}
+        },
+        {
+          "id": 41,
+          "orgCode": "1|20|27|39|41",
+          "fullName": "内退",
+          "parentId": 39,
+          "extendAttrs": {}
+        },
+        {
+          "id": 42,
+          "orgCode": "1|20|27|39|42",
+          "fullName": "停薪留职",
+          "parentId": 39,
+          "extendAttrs": {}
+        },
+        {
+          "id": 43,
+          "orgCode": "1|20|27|39|43",
+          "fullName": "外派",
+          "parentId": 39,
+          "extendAttrs": {}
+        },
+        {
+          "id": 45,
+          "orgCode": "1|20|27|44|45",
+          "fullName": "公司领导",
+          "parentId": 44,
+          "extendAttrs": {}
+        },
+        {
+          "id": 46,
+          "orgCode": "1|20|27|44|46",
+          "fullName": "洋湖水厂",
+          "parentId": 44,
+          "extendAttrs": {}
+        },
+        {
+          "id": 47,
+          "orgCode": "1|20|27|44|47",
+          "fullName": "观音阁水厂",
+          "parentId": 44,
+          "extendAttrs": {}
+        },
+        {
+          "id": 48,
+          "orgCode": "1|20|27|44|48",
+          "fullName": "黄泥头水厂",
+          "parentId": 44,
+          "extendAttrs": {}
+        },
+        {
+          "id": 49,
+          "orgCode": "1|20|27|44|49",
+          "fullName": "第四水厂",
+          "parentId": 44,
+          "extendAttrs": {}
+        },
+        {
+          "id": 50,
+          "orgCode": "1|20|27|44|50",
+          "fullName": "综合科",
+          "parentId": 44,
+          "extendAttrs": {}
+        },
+        {
+          "id": 53,
+          "orgCode": "1|20|27|52|53",
+          "fullName": "公司领导",
+          "parentId": 52,
+          "extendAttrs": {}
+        },
+        {
+          "id": 54,
+          "orgCode": "1|20|27|52|54",
+          "fullName": "勘察设计室",
+          "parentId": 52,
+          "extendAttrs": {}
+        },
+        {
+          "id": 55,
+          "orgCode": "1|20|27|52|55",
+          "fullName": "综合科",
+          "parentId": 52,
+          "extendAttrs": {}
+        },
+        {
+          "id": 6,
+          "orgCode": "1|3|6",
+          "fullName": "办公室",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 56,
+          "orgCode": "1|20|27|52|56",
+          "fullName": "项目部",
+          "parentId": 52,
+          "extendAttrs": {}
+        },
+        {
+          "id": 57,
+          "orgCode": "1|20|27|52|57",
+          "fullName": "樟树坑项目部",
+          "parentId": 52,
+          "extendAttrs": {}
+        },
+        {
+          "id": 59,
+          "orgCode": "1|20|27|58|59",
+          "fullName": "公司领导",
+          "parentId": 58,
+          "extendAttrs": {}
+        },
+        {
+          "id": 60,
+          "orgCode": "1|20|27|58|60",
+          "fullName": "综合科",
+          "parentId": 58,
+          "extendAttrs": {}
+        },
+        {
+          "id": 62,
+          "orgCode": "1|20|27|58|62",
+          "fullName": "巡检探漏科",
+          "parentId": 58,
+          "extendAttrs": {}
+        },
+        {
+          "id": 63,
+          "orgCode": "1|20|27|58|63",
+          "fullName": "稽查大队",
+          "parentId": 58,
+          "extendAttrs": {}
+        },
+        {
+          "id": 65,
+          "orgCode": "1|20|27|64|65",
+          "fullName": "公司领导",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 7,
+          "orgCode": "1|3|7",
+          "fullName": "企划部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 66,
+          "orgCode": "1|20|27|64|66",
+          "fullName": "表务科",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 3,
+          "orgCode": "1|3",
+          "fullName": "水务集团本部",
+          "parentId": 1,
+          "extendAttrs": {}
+        },
+        {
+          "id": 20,
+          "orgCode": "1|20",
+          "fullName": "赣东北区域运营管理中心",
+          "parentId": 1,
+          "extendAttrs": {}
+        },
+        {
+          "id": 27,
+          "orgCode": "1|20|27",
+          "fullName": "景德镇水务公司",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 8,
+          "orgCode": "1|3|8",
+          "fullName": "运营管理部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 44,
+          "orgCode": "1|20|27|44",
+          "fullName": "制水分公司",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 52,
+          "orgCode": "1|20|27|52",
+          "fullName": "工程分公司",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 58,
+          "orgCode": "1|20|27|58",
+          "fullName": "管网分公司",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 76,
+          "orgCode": "1|20|27|75|76",
+          "fullName": "公司领导",
+          "parentId": 75,
+          "extendAttrs": {}
+        },
+        {
+          "id": 77,
+          "orgCode": "1|20|27|75|77",
+          "fullName": "综合科",
+          "parentId": 75,
+          "extendAttrs": {}
+        },
+        {
+          "id": 78,
+          "orgCode": "1|20|27|75|78",
+          "fullName": "检定科",
+          "parentId": 75,
+          "extendAttrs": {}
+        },
+        {
+          "id": 80,
+          "orgCode": "1|20|27|79|80",
+          "fullName": "办公室",
+          "parentId": 79,
+          "extendAttrs": {}
+        },
+        {
+          "id": 81,
+          "orgCode": "1|20|27|79|81",
+          "fullName": "公司领导",
+          "parentId": 79,
+          "extendAttrs": {}
+        },
+        {
+          "id": 82,
+          "orgCode": "1|20|27|79|82",
+          "fullName": "综合科",
+          "parentId": 79,
+          "extendAttrs": {}
+        },
+        {
+          "id": 85,
+          "orgCode": "1|20|27|83|85",
+          "fullName": "综合科",
+          "parentId": 83,
+          "extendAttrs": {}
+        },
+        {
+          "id": 68,
+          "orgCode": "1|20|27|64|68",
+          "fullName": "昌江营业厅",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 87,
+          "orgCode": "1|20|27|86|87",
+          "fullName": "公司领导",
+          "parentId": 86,
+          "extendAttrs": {}
+        },
+        {
+          "id": 88,
+          "orgCode": "1|20|27|86|88",
+          "fullName": "综合科",
+          "parentId": 86,
+          "extendAttrs": {}
+        },
+        {
+          "id": 89,
+          "orgCode": "1|20|27|86|89",
+          "fullName": "业务科",
+          "parentId": 86,
+          "extendAttrs": {}
+        },
+        {
+          "id": 69,
+          "orgCode": "1|20|27|64|69",
+          "fullName": "东郊营业厅",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 90,
+          "orgCode": "1|20|27|86|90",
+          "fullName": "二次加压站",
+          "parentId": 86,
+          "extendAttrs": {}
+        },
+        {
+          "id": 91,
+          "orgCode": "1|20|27|91",
+          "fullName": "高新区加压站",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 92,
+          "orgCode": "1|20|27|92",
+          "fullName": "工程部",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 70,
+          "orgCode": "1|20|27|64|70",
+          "fullName": "客户服务中心",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 94,
+          "orgCode": "1|20|27|94",
+          "fullName": "信息管理中心",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 96,
+          "orgCode": "1|20|95|96",
+          "fullName": "公司领导",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 71,
+          "orgCode": "1|20|27|64|71",
+          "fullName": "综合科",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 97,
+          "orgCode": "1|20|95|97",
+          "fullName": "财务部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 98,
+          "orgCode": "1|20|95|98",
+          "fullName": "综合管理部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 99,
+          "orgCode": "1|20|95|99",
+          "fullName": "企管部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 100,
+          "orgCode": "1|20|95|100",
+          "fullName": "管网工程部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 102,
+          "orgCode": "1|20|95|101|102",
+          "fullName": "乐平润泉缴费营业厅",
+          "parentId": 101,
+          "extendAttrs": {}
+        },
+        {
+          "id": 103,
+          "orgCode": "1|20|95|101|103",
+          "fullName": "行政服务中心",
+          "parentId": 101,
+          "extendAttrs": {}
+        },
+        {
+          "id": 104,
+          "orgCode": "1|20|95|104",
+          "fullName": "安装部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 105,
+          "orgCode": "1|20|95|105",
+          "fullName": "监察审计部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 73,
+          "orgCode": "1|20|27|64|73",
+          "fullName": "西路营业厅",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 106,
+          "orgCode": "1|20|95|106",
+          "fullName": "生产技术安监部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 107,
+          "orgCode": "1|20|95|106|107",
+          "fullName": "乐平润泉水厂",
+          "parentId": 106,
+          "extendAttrs": {}
+        },
+        {
+          "id": 108,
+          "orgCode": "1|20|95|108",
+          "fullName": "水质检测中心",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 110,
+          "orgCode": "1|20|95|109|110",
+          "fullName": "技术部",
+          "parentId": 109,
+          "extendAttrs": {}
+        },
+        {
+          "id": 111,
+          "orgCode": "1|20|95|109|111",
+          "fullName": "综合办公室",
+          "parentId": 109,
+          "extendAttrs": {}
+        },
+        {
+          "id": 112,
+          "orgCode": "1|20|95|109|112",
+          "fullName": "财务部",
+          "parentId": 109,
+          "extendAttrs": {}
+        },
+        {
+          "id": 113,
+          "orgCode": "1|20|95|109|113",
+          "fullName": "管网延伸筹备小组",
+          "parentId": 109,
+          "extendAttrs": {}
+        },
+        {
+          "id": 114,
+          "orgCode": "1|20|95|109|114",
+          "fullName": "领导小组建设协调组",
+          "parentId": 109,
+          "extendAttrs": {}
+        },
+        {
+          "id": 115,
+          "orgCode": "1|20|95|109|115",
+          "fullName": "领导小组规划技术组",
+          "parentId": 109,
+          "extendAttrs": {}
+        },
+        {
+          "id": 116,
+          "orgCode": "1|20|95|116",
+          "fullName": "农村自来水工程项目部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 118,
+          "orgCode": "1|20|95|117|118",
+          "fullName": "公司领导",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 120,
+          "orgCode": "1|20|95|117|120",
+          "fullName": "综合部",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 121,
+          "orgCode": "1|20|95|117|121",
+          "fullName": "监察部",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 122,
+          "orgCode": "1|20|95|117|122",
+          "fullName": "工程部",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 123,
+          "orgCode": "1|20|95|117|123",
+          "fullName": "东方红水厂",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 124,
+          "orgCode": "1|20|95|117|124",
+          "fullName": "礼林水厂",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 125,
+          "orgCode": "1|20|95|117|125",
+          "fullName": "临港水厂",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 126,
+          "orgCode": "1|20|95|117|126",
+          "fullName": "南港水厂",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 128,
+          "orgCode": "1|20|95|117|128",
+          "fullName": "浯口水厂",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 129,
+          "orgCode": "1|20|95|117|129",
+          "fullName": "幸福水厂",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 130,
+          "orgCode": "1|20|95|117|130",
+          "fullName": "涌山水厂",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 74,
+          "orgCode": "1|20|27|64|74",
+          "fullName": "供水工程所",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 131,
+          "orgCode": "1|20|95|117|131",
+          "fullName": "镇桥水厂",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 75,
+          "orgCode": "1|20|27|75",
+          "fullName": "量溯水表检测中心",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 83,
+          "orgCode": "1|20|27|83",
+          "fullName": "景德镇市搏源机电设备工程有限公司",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 86,
+          "orgCode": "1|20|27|86",
+          "fullName": "景德镇市开源二次供水服务有限公司",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 95,
+          "orgCode": "1|20|95",
+          "fullName": "乐平润泉供水公司",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 117,
+          "orgCode": "1|20|95|117",
+          "fullName": "农村供水分公司",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 67,
+          "orgCode": "1|20|27|64|67",
+          "fullName": "珠山营业厅",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 141,
+          "orgCode": "1|20|135|141",
+          "fullName": "安装部",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 155,
+          "orgCode": "1|20|135|154|155",
+          "fullName": "项目部",
+          "parentId": 154,
+          "extendAttrs": {}
+        },
+        {
+          "id": 133,
+          "orgCode": "1|20|95|117|133",
+          "fullName": "生产技术部",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 156,
+          "orgCode": "1|20|135|154|156",
+          "fullName": "请假",
+          "parentId": 154,
+          "extendAttrs": {}
+        },
+        {
+          "id": 168,
+          "orgCode": "1|20|165|168",
+          "fullName": "综合管理部",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 169,
+          "orgCode": "1|20|165|169",
+          "fullName": "管网工程部",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 170,
+          "orgCode": "1|20|165|170",
+          "fullName": "安装部",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 171,
+          "orgCode": "1|20|165|171",
+          "fullName": "客户服务部",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 172,
+          "orgCode": "1|20|165|171|172",
+          "fullName": "热线中心",
+          "parentId": 171,
+          "extendAttrs": {}
+        },
+        {
+          "id": 173,
+          "orgCode": "1|20|165|171|173",
+          "fullName": "城南片区营业厅",
+          "parentId": 171,
+          "extendAttrs": {}
+        },
+        {
+          "id": 174,
+          "orgCode": "1|20|165|171|174",
+          "fullName": "香屯片区营业厅",
+          "parentId": 171,
+          "extendAttrs": {}
+        },
+        {
+          "id": 186,
+          "orgCode": "1|20|165|181|186",
+          "fullName": "河西水厂",
+          "parentId": 181,
+          "extendAttrs": {}
+        },
+        {
+          "id": 187,
+          "orgCode": "1|20|165|187",
+          "fullName": "水质检测中心",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 193,
+          "orgCode": "1|20|165|191|193",
+          "fullName": "财务部",
+          "parentId": 191,
+          "extendAttrs": {}
+        },
+        {
+          "id": 195,
+          "orgCode": "1|20|165|194|195",
+          "fullName": "农饮部",
+          "parentId": 194,
+          "extendAttrs": {}
+        },
+        {
+          "id": 196,
+          "orgCode": "1|20|165|196",
+          "fullName": "棚改项目",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 197,
+          "orgCode": "1|20|165|197",
+          "fullName": "测漏公司",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 204,
+          "orgCode": "1|20|199|204",
+          "fullName": "运营管理部",
+          "parentId": 199,
+          "extendAttrs": {}
+        },
+        {
+          "id": 205,
+          "orgCode": "1|20|199|205",
+          "fullName": "管网工程部",
+          "parentId": 199,
+          "extendAttrs": {}
+        },
+        {
+          "id": 208,
+          "orgCode": "1|207|208",
+          "fullName": "公司领导",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 209,
+          "orgCode": "1|207|209",
+          "fullName": "人力行政部",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 220,
+          "orgCode": "1|207|214|220",
+          "fullName": "安装工程部",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 221,
+          "orgCode": "1|207|214|221",
+          "fullName": "客户服务中心",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 136,
+          "orgCode": "1|20|135|136",
+          "fullName": "公司领导",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 222,
+          "orgCode": "1|207|214|222",
+          "fullName": "监察科",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 223,
+          "orgCode": "1|207|214|223",
+          "fullName": "技术部",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 224,
+          "orgCode": "1|207|214|224",
+          "fullName": "江州公司",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 225,
+          "orgCode": "1|207|214|225",
+          "fullName": "码头公司",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 229,
+          "orgCode": "1|207|214|229",
+          "fullName": "其他",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 235,
+          "orgCode": "1|207|214|235",
+          "fullName": "罗湖净水厂",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 137,
+          "orgCode": "1|20|135|137",
+          "fullName": "财务部",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 236,
+          "orgCode": "1|207|214|236",
+          "fullName": "罗湖泵房",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 237,
+          "orgCode": "1|207|214|237",
+          "fullName": "东关加压站水厂",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 238,
+          "orgCode": "1|207|214|238",
+          "fullName": "加压站泵房",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 239,
+          "orgCode": "1|207|214|239",
+          "fullName": "净水厂",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 240,
+          "orgCode": "1|207|214|240",
+          "fullName": "码头净水厂",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 241,
+          "orgCode": "1|207|214|241",
+          "fullName": "码头净水厂泵房",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 243,
+          "orgCode": "1|207|214|243",
+          "fullName": "码头净水厂中控室",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 244,
+          "orgCode": "1|207|214|244",
+          "fullName": "码头净水厂加药间",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 245,
+          "orgCode": "1|207|214|245",
+          "fullName": "造纸厂泵房",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 247,
+          "orgCode": "1|207|214|247",
+          "fullName": "王家埒泵房",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 248,
+          "orgCode": "1|207|214|248",
+          "fullName": "水源地泵房",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 253,
+          "orgCode": "1|207|252|253",
+          "fullName": "公司领导",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 256,
+          "orgCode": "1|207|252|256",
+          "fullName": "管网工程部",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 257,
+          "orgCode": "1|207|252|257",
+          "fullName": "安装部",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 270,
+          "orgCode": "1|207|252|269|270",
+          "fullName": "财务部",
+          "parentId": 269,
+          "extendAttrs": {}
+        },
+        {
+          "id": 271,
+          "orgCode": "1|207|252|269|271",
+          "fullName": "技术部",
+          "parentId": 269,
+          "extendAttrs": {}
+        },
+        {
+          "id": 274,
+          "orgCode": "1|207|273|274",
+          "fullName": "公司领导",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 275,
+          "orgCode": "1|207|273|275",
+          "fullName": "财务部",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 276,
+          "orgCode": "1|207|273|276",
+          "fullName": "综合管理部",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 194,
+          "orgCode": "1|20|165|194",
+          "fullName": "农村供水分公司",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 207,
+          "orgCode": "1|207",
+          "fullName": "赣北区域运营管理中心",
+          "parentId": 1,
+          "extendAttrs": {}
+        },
+        {
+          "id": 252,
+          "orgCode": "1|207|252",
+          "fullName": "庐山润泉供水公司",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 138,
+          "orgCode": "1|20|135|138",
+          "fullName": "综合管理部",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 273,
+          "orgCode": "1|207|273",
+          "fullName": "德安润泉供水公司",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 132,
+          "orgCode": "1|20|95|117|132",
+          "fullName": "众埠水厂",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 139,
+          "orgCode": "1|20|135|138|139",
+          "fullName": "综合治理办公室",
+          "parentId": 138,
+          "extendAttrs": {}
+        },
+        {
+          "id": 140,
+          "orgCode": "1|20|135|140",
+          "fullName": "管网工程部",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 151,
+          "orgCode": "1|20|135|146|151",
+          "fullName": "东河自来水工程鹅湖水厂",
+          "parentId": 146,
+          "extendAttrs": {}
+        },
+        {
+          "id": 152,
+          "orgCode": "1|20|135|146|152",
+          "fullName": "玉田水厂",
+          "parentId": 146,
+          "extendAttrs": {}
+        },
+        {
+          "id": 153,
+          "orgCode": "1|20|135|153",
+          "fullName": "水质检测中心",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 154,
+          "orgCode": "1|20|135|154",
+          "fullName": "其他",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 157,
+          "orgCode": "1|20|135|157",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 158,
+          "orgCode": "1|20|135|157|158",
+          "fullName": "财务部",
+          "parentId": 157,
+          "extendAttrs": {}
+        },
+        {
+          "id": 159,
+          "orgCode": "1|20|135|157|159",
+          "fullName": "办公室",
+          "parentId": 157,
+          "extendAttrs": {}
+        },
+        {
+          "id": 160,
+          "orgCode": "1|20|135|157|160",
+          "fullName": "工程部",
+          "parentId": 157,
+          "extendAttrs": {}
+        },
+        {
+          "id": 163,
+          "orgCode": "1|20|135|162|163",
+          "fullName": "农饮部",
+          "parentId": 162,
+          "extendAttrs": {}
+        },
+        {
+          "id": 164,
+          "orgCode": "1|20|135|162|163|164",
+          "fullName": "湘湖水厂",
+          "parentId": 163,
+          "extendAttrs": {}
+        },
+        {
+          "id": 166,
+          "orgCode": "1|20|165|166",
+          "fullName": "公司领导",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 167,
+          "orgCode": "1|20|165|167",
+          "fullName": "财务部",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 175,
+          "orgCode": "1|20|165|171|175",
+          "fullName": "铜矿片区营业厅",
+          "parentId": 171,
+          "extendAttrs": {}
+        },
+        {
+          "id": 176,
+          "orgCode": "1|20|165|171|176",
+          "fullName": "城新营所营业厅",
+          "parentId": 171,
+          "extendAttrs": {}
+        },
+        {
+          "id": 178,
+          "orgCode": "1|20|165|171|178",
+          "fullName": "银山所营业厅",
+          "parentId": 171,
+          "extendAttrs": {}
+        },
+        {
+          "id": 179,
+          "orgCode": "1|20|165|171|179",
+          "fullName": "银城客服中心",
+          "parentId": 171,
+          "extendAttrs": {}
+        },
+        {
+          "id": 145,
+          "orgCode": "1|20|135|145",
+          "fullName": "监察审计部",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 180,
+          "orgCode": "1|20|165|180",
+          "fullName": "监察审计部",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 181,
+          "orgCode": "1|20|165|181",
+          "fullName": "生产技术安监部",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 146,
+          "orgCode": "1|20|135|146",
+          "fullName": "生产技术安监部",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 182,
+          "orgCode": "1|20|165|181|182",
+          "fullName": "黄柏乡水厂",
+          "parentId": 181,
+          "extendAttrs": {}
+        },
+        {
+          "id": 183,
+          "orgCode": "1|20|165|181|183",
+          "fullName": "龙头山水厂",
+          "parentId": 181,
+          "extendAttrs": {}
+        },
+        {
+          "id": 184,
+          "orgCode": "1|20|165|181|184",
+          "fullName": "新岗山水厂",
+          "parentId": 181,
+          "extendAttrs": {}
+        },
+        {
+          "id": 188,
+          "orgCode": "1|20|165|188",
+          "fullName": "其他",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 190,
+          "orgCode": "1|20|165|188|190",
+          "fullName": "借调",
+          "parentId": 188,
+          "extendAttrs": {}
+        },
+        {
+          "id": 191,
+          "orgCode": "1|20|165|191",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 192,
+          "orgCode": "1|20|165|191|192",
+          "fullName": "办公室",
+          "parentId": 191,
+          "extendAttrs": {}
+        },
+        {
+          "id": 198,
+          "orgCode": "1|20|165|198",
+          "fullName": "新营客服部",
+          "parentId": 165,
+          "extendAttrs": {}
+        },
+        {
+          "id": 200,
+          "orgCode": "1|20|199|200",
+          "fullName": "公司领导",
+          "parentId": 199,
+          "extendAttrs": {}
+        },
+        {
+          "id": 201,
+          "orgCode": "1|20|199|201",
+          "fullName": "财务部",
+          "parentId": 199,
+          "extendAttrs": {}
+        },
+        {
+          "id": 202,
+          "orgCode": "1|20|199|202",
+          "fullName": "综合管理部",
+          "parentId": 199,
+          "extendAttrs": {}
+        },
+        {
+          "id": 210,
+          "orgCode": "1|207|210",
+          "fullName": "财务部",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 211,
+          "orgCode": "1|207|211",
+          "fullName": "监察审计部",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 212,
+          "orgCode": "1|207|212",
+          "fullName": "运营管理部",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 213,
+          "orgCode": "1|207|213",
+          "fullName": "信息管理部",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 215,
+          "orgCode": "1|207|214|215",
+          "fullName": "公司领导",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 216,
+          "orgCode": "1|207|214|216",
+          "fullName": "账务科",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 217,
+          "orgCode": "1|207|214|217",
+          "fullName": "办公室",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 147,
+          "orgCode": "1|20|135|146|147",
+          "fullName": "大石口水厂",
+          "parentId": 146,
+          "extendAttrs": {}
+        },
+        {
+          "id": 219,
+          "orgCode": "1|207|214|219",
+          "fullName": "城西营业所",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 226,
+          "orgCode": "1|207|214|226",
+          "fullName": "水厂",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 227,
+          "orgCode": "1|207|214|226|227",
+          "fullName": "水厂化验室",
+          "parentId": 226,
+          "extendAttrs": {}
+        },
+        {
+          "id": 230,
+          "orgCode": "1|207|214|229|230",
+          "fullName": "临时工",
+          "parentId": 229,
+          "extendAttrs": {}
+        },
+        {
+          "id": 231,
+          "orgCode": "1|207|214|229|231",
+          "fullName": "挂靠",
+          "parentId": 229,
+          "extendAttrs": {}
+        },
+        {
+          "id": 232,
+          "orgCode": "1|207|214|229|232",
+          "fullName": "内退",
+          "parentId": 229,
+          "extendAttrs": {}
+        },
+        {
+          "id": 233,
+          "orgCode": "1|207|214|229|233",
+          "fullName": "请假",
+          "parentId": 229,
+          "extendAttrs": {}
+        },
+        {
+          "id": 246,
+          "orgCode": "1|207|214|246",
+          "fullName": "杨林湖泵房",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 149,
+          "orgCode": "1|20|135|146|149",
+          "fullName": "西河自来水工程黄坛水厂",
+          "parentId": 146,
+          "extendAttrs": {}
+        },
+        {
+          "id": 249,
+          "orgCode": "1|207|214|249",
+          "fullName": "灯具厂泵房",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 250,
+          "orgCode": "1|207|214|250",
+          "fullName": "人民厂泵房",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 251,
+          "orgCode": "1|207|214|251",
+          "fullName": "用水所",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 162,
+          "orgCode": "1|20|135|162",
+          "fullName": "农村供水分公司",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 199,
+          "orgCode": "1|20|199",
+          "fullName": "三清山润泉供水公司",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 214,
+          "orgCode": "1|207|214",
+          "fullName": "瑞昌润泉供水公司",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 142,
+          "orgCode": "1|20|135|142",
+          "fullName": "客户服务部",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 143,
+          "orgCode": "1|20|135|142|143",
+          "fullName": "浮梁润泉缴费营业厅",
+          "parentId": 142,
+          "extendAttrs": {}
+        },
+        {
+          "id": 144,
+          "orgCode": "1|20|135|142|144",
+          "fullName": "稽查巡检大队",
+          "parentId": 142,
+          "extendAttrs": {}
+        },
+        {
+          "id": 264,
+          "orgCode": "1|207|252|261|264",
+          "fullName": "蓼花水厂",
+          "parentId": 261,
+          "extendAttrs": {}
+        },
+        {
+          "id": 265,
+          "orgCode": "1|207|252|261|265",
+          "fullName": "一级泵站",
+          "parentId": 261,
+          "extendAttrs": {}
+        },
+        {
+          "id": 266,
+          "orgCode": "1|207|252|266",
+          "fullName": "水质检测中心",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 267,
+          "orgCode": "1|207|252|267",
+          "fullName": "其他",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 268,
+          "orgCode": "1|207|252|267|268",
+          "fullName": "请假",
+          "parentId": 267,
+          "extendAttrs": {}
+        },
+        {
+          "id": 272,
+          "orgCode": "1|207|252|272",
+          "fullName": "项目部",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 288,
+          "orgCode": "1|207|273|288",
+          "fullName": "水质检测中心",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 289,
+          "orgCode": "1|207|273|289",
+          "fullName": "其他",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 290,
+          "orgCode": "1|207|273|289|290",
+          "fullName": "内退",
+          "parentId": 289,
+          "extendAttrs": {}
+        },
+        {
+          "id": 291,
+          "orgCode": "1|207|273|289|291",
+          "fullName": "停薪留职",
+          "parentId": 289,
+          "extendAttrs": {}
+        },
+        {
+          "id": 292,
+          "orgCode": "1|207|273|289|292",
+          "fullName": "外借",
+          "parentId": 289,
+          "extendAttrs": {}
+        },
+        {
+          "id": 294,
+          "orgCode": "1|207|273|293|294",
+          "fullName": "财务部",
+          "parentId": 293,
+          "extendAttrs": {}
+        },
+        {
+          "id": 295,
+          "orgCode": "1|207|273|293|295",
+          "fullName": "行政部",
+          "parentId": 293,
+          "extendAttrs": {}
+        },
+        {
+          "id": 297,
+          "orgCode": "1|207|273|296|297",
+          "fullName": "农饮部",
+          "parentId": 296,
+          "extendAttrs": {}
+        },
+        {
+          "id": 305,
+          "orgCode": "1|207|298|304|305",
+          "fullName": "共青润泉缴费服务厅",
+          "parentId": 304,
+          "extendAttrs": {}
+        },
+        {
+          "id": 306,
+          "orgCode": "1|207|298|304|306",
+          "fullName": "行政服务中心",
+          "parentId": 304,
+          "extendAttrs": {}
+        },
+        {
+          "id": 307,
+          "orgCode": "1|207|298|307",
+          "fullName": "监察审计部",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 308,
+          "orgCode": "1|207|298|308",
+          "fullName": "生产技术安监部",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 309,
+          "orgCode": "1|207|298|308|309",
+          "fullName": "共青城润泉水厂",
+          "parentId": 308,
+          "extendAttrs": {}
+        },
+        {
+          "id": 317,
+          "orgCode": "1|207|314|317",
+          "fullName": "综合管理部",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 318,
+          "orgCode": "1|207|314|318",
+          "fullName": "运营管理部",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 323,
+          "orgCode": "1|207|314|320|323",
+          "fullName": "山谷缴费营业厅",
+          "parentId": 320,
+          "extendAttrs": {}
+        },
+        {
+          "id": 261,
+          "orgCode": "1|207|252|261",
+          "fullName": "生产技术安监部",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 324,
+          "orgCode": "1|207|314|320|324",
+          "fullName": "行政服务中心",
+          "parentId": 320,
+          "extendAttrs": {}
+        },
+        {
+          "id": 325,
+          "orgCode": "1|207|314|325",
+          "fullName": "安装部",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 326,
+          "orgCode": "1|207|314|326",
+          "fullName": "监察审计部",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 327,
+          "orgCode": "1|207|314|327",
+          "fullName": "生产技术安监部",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 328,
+          "orgCode": "1|207|314|327|328",
+          "fullName": "罗桥水厂",
+          "parentId": 327,
+          "extendAttrs": {}
+        },
+        {
+          "id": 329,
+          "orgCode": "1|207|314|327|329",
+          "fullName": "马坳水厂",
+          "parentId": 327,
+          "extendAttrs": {}
+        },
+        {
+          "id": 331,
+          "orgCode": "1|207|314|327|331",
+          "fullName": "马家坳水厂",
+          "parentId": 327,
+          "extendAttrs": {}
+        },
+        {
+          "id": 332,
+          "orgCode": "1|207|314|327|332",
+          "fullName": "渣津水厂",
+          "parentId": 327,
+          "extendAttrs": {}
+        },
+        {
+          "id": 333,
+          "orgCode": "1|207|314|327|333",
+          "fullName": "港口水厂",
+          "parentId": 327,
+          "extendAttrs": {}
+        },
+        {
+          "id": 334,
+          "orgCode": "1|207|314|334",
+          "fullName": "水质检测中心",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 335,
+          "orgCode": "1|207|314|335",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 337,
+          "orgCode": "1|207|314|336|337",
+          "fullName": "供水分公司",
+          "parentId": 336,
+          "extendAttrs": {}
+        },
+        {
+          "id": 338,
+          "orgCode": "1|207|314|336|338",
+          "fullName": "西港水厂",
+          "parentId": 336,
+          "extendAttrs": {}
+        },
+        {
+          "id": 339,
+          "orgCode": "1|207|314|336|339",
+          "fullName": "黄港水厂",
+          "parentId": 336,
+          "extendAttrs": {}
+        },
+        {
+          "id": 340,
+          "orgCode": "1|207|314|340",
+          "fullName": "其他",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 342,
+          "orgCode": "1|207|314|340|342",
+          "fullName": "内退",
+          "parentId": 340,
+          "extendAttrs": {}
+        },
+        {
+          "id": 344,
+          "orgCode": "1|207|343|344",
+          "fullName": "公司领导",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 345,
+          "orgCode": "1|207|343|345",
+          "fullName": "财务部",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 346,
+          "orgCode": "1|207|343|346",
+          "fullName": "综合管理部",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 347,
+          "orgCode": "1|207|343|347",
+          "fullName": "管网工程部",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 348,
+          "orgCode": "1|207|343|348",
+          "fullName": "安装部",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 350,
+          "orgCode": "1|207|343|349|350",
+          "fullName": "书香门第缴费营业厅",
+          "parentId": 349,
+          "extendAttrs": {}
+        },
+        {
+          "id": 351,
+          "orgCode": "1|207|343|349|351",
+          "fullName": "四维缴费营业厅",
+          "parentId": 349,
+          "extendAttrs": {}
+        },
+        {
+          "id": 353,
+          "orgCode": "1|207|343|349|353",
+          "fullName": "行政服务中心",
+          "parentId": 349,
+          "extendAttrs": {}
+        },
+        {
+          "id": 354,
+          "orgCode": "1|207|343|354",
+          "fullName": "监察审计部",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 355,
+          "orgCode": "1|207|343|355",
+          "fullName": "生产技术安监部",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 296,
+          "orgCode": "1|207|273|296",
+          "fullName": "农村供水分公司",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 262,
+          "orgCode": "1|207|252|261|262",
+          "fullName": "蓼南水厂",
+          "parentId": 261,
+          "extendAttrs": {}
+        },
+        {
+          "id": 343,
+          "orgCode": "1|207|343",
+          "fullName": "永修润泉供水公司",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 254,
+          "orgCode": "1|207|252|254",
+          "fullName": "财务部",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 255,
+          "orgCode": "1|207|252|255",
+          "fullName": "综合管理部",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 258,
+          "orgCode": "1|207|252|258",
+          "fullName": "客户服务部",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 260,
+          "orgCode": "1|207|252|260",
+          "fullName": "监察审计部",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 263,
+          "orgCode": "1|207|252|261|263",
+          "fullName": "庐山市老水厂",
+          "parentId": 261,
+          "extendAttrs": {}
+        },
+        {
+          "id": 285,
+          "orgCode": "1|207|273|282|285",
+          "fullName": "红桥水厂",
+          "parentId": 282,
+          "extendAttrs": {}
+        },
+        {
+          "id": 286,
+          "orgCode": "1|207|273|282|286",
+          "fullName": "林泉水厂",
+          "parentId": 282,
+          "extendAttrs": {}
+        },
+        {
+          "id": 299,
+          "orgCode": "1|207|298|299",
+          "fullName": "公司领导",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 300,
+          "orgCode": "1|207|298|300",
+          "fullName": "财务部",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 301,
+          "orgCode": "1|207|298|301",
+          "fullName": "综合管理部",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 303,
+          "orgCode": "1|207|298|303",
+          "fullName": "安装部",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 304,
+          "orgCode": "1|207|298|304",
+          "fullName": "客户服务部",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 310,
+          "orgCode": "1|207|298|310",
+          "fullName": "水质检测中心",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 311,
+          "orgCode": "1|207|298|311",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 279,
+          "orgCode": "1|207|273|279",
+          "fullName": "客户服务部",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 312,
+          "orgCode": "1|207|298|311|312",
+          "fullName": "财务部",
+          "parentId": 311,
+          "extendAttrs": {}
+        },
+        {
+          "id": 313,
+          "orgCode": "1|207|298|311|313",
+          "fullName": "综合办",
+          "parentId": 311,
+          "extendAttrs": {}
+        },
+        {
+          "id": 315,
+          "orgCode": "1|207|314|315",
+          "fullName": "公司领导",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 316,
+          "orgCode": "1|207|314|316",
+          "fullName": "财务部",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 320,
+          "orgCode": "1|207|314|320",
+          "fullName": "客户服务部",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 321,
+          "orgCode": "1|207|314|320|321",
+          "fullName": "滨江缴费营业厅",
+          "parentId": 320,
+          "extendAttrs": {}
+        },
+        {
+          "id": 352,
+          "orgCode": "1|207|343|349|352",
+          "fullName": "老城缴费营业厅",
+          "parentId": 349,
+          "extendAttrs": {}
+        },
+        {
+          "id": 356,
+          "orgCode": "1|207|343|355|356",
+          "fullName": "新城水厂",
+          "parentId": 355,
+          "extendAttrs": {}
+        },
+        {
+          "id": 357,
+          "orgCode": "1|207|343|355|357",
+          "fullName": "第二水厂",
+          "parentId": 355,
+          "extendAttrs": {}
+        },
+        {
+          "id": 358,
+          "orgCode": "1|207|343|355|358",
+          "fullName": "滩溪水厂",
+          "parentId": 355,
+          "extendAttrs": {}
+        },
+        {
+          "id": 281,
+          "orgCode": "1|207|273|281",
+          "fullName": "监察审计部",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 360,
+          "orgCode": "1|207|343|355|360",
+          "fullName": "梅棠枹桐水厂",
+          "parentId": 355,
+          "extendAttrs": {}
+        },
+        {
+          "id": 361,
+          "orgCode": "1|207|343|355|361",
+          "fullName": "永修水厂",
+          "parentId": 355,
+          "extendAttrs": {}
+        },
+        {
+          "id": 362,
+          "orgCode": "1|207|343|355|362",
+          "fullName": "云山水厂",
+          "parentId": 355,
+          "extendAttrs": {}
+        },
+        {
+          "id": 363,
+          "orgCode": "1|207|343|355|363",
+          "fullName": "农村水厂",
+          "parentId": 355,
+          "extendAttrs": {}
+        },
+        {
+          "id": 364,
+          "orgCode": "1|207|343|364",
+          "fullName": "水质检测中心",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 282,
+          "orgCode": "1|207|273|282",
+          "fullName": "生产技术安监部",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 365,
+          "orgCode": "1|207|343|365",
+          "fullName": "其他",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 366,
+          "orgCode": "1|207|343|365|366",
+          "fullName": "二次供水管理部",
+          "parentId": 365,
+          "extendAttrs": {}
+        },
+        {
+          "id": 367,
+          "orgCode": "1|207|343|365|367",
+          "fullName": "项目部",
+          "parentId": 365,
+          "extendAttrs": {}
+        },
+        {
+          "id": 369,
+          "orgCode": "1|207|343|369",
+          "fullName": "办公室",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 370,
+          "orgCode": "1|207|343|370",
+          "fullName": "规划科",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 373,
+          "orgCode": "1|372|373",
+          "fullName": "公司领导",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 374,
+          "orgCode": "1|372|374",
+          "fullName": "人力行政部",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 376,
+          "orgCode": "1|372|376",
+          "fullName": "监察审计部",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 377,
+          "orgCode": "1|372|377",
+          "fullName": "运营管理部",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 379,
+          "orgCode": "1|372|379",
+          "fullName": "会昌润泉供水公司",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 380,
+          "orgCode": "1|372|379|380",
+          "fullName": "公司领导",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 382,
+          "orgCode": "1|372|379|382",
+          "fullName": "综合管理部",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 383,
+          "orgCode": "1|372|379|383",
+          "fullName": "运营管理部",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 384,
+          "orgCode": "1|372|379|384",
+          "fullName": "管网工程部",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 385,
+          "orgCode": "1|372|379|385",
+          "fullName": "客户服务部",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 283,
+          "orgCode": "1|207|273|282|283",
+          "fullName": "德安雁家湖水厂",
+          "parentId": 282,
+          "extendAttrs": {}
+        },
+        {
+          "id": 386,
+          "orgCode": "1|372|379|385|386",
+          "fullName": "红旗大道收费厅",
+          "parentId": 385,
+          "extendAttrs": {}
+        },
+        {
+          "id": 387,
+          "orgCode": "1|372|379|385|387",
+          "fullName": "水东收费厅",
+          "parentId": 385,
+          "extendAttrs": {}
+        },
+        {
+          "id": 389,
+          "orgCode": "1|372|379|385|389",
+          "fullName": "综合服务大厅",
+          "parentId": 385,
+          "extendAttrs": {}
+        },
+        {
+          "id": 390,
+          "orgCode": "1|372|379|390",
+          "fullName": "安装部",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 391,
+          "orgCode": "1|372|379|391",
+          "fullName": "监察审计部",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 378,
+          "orgCode": "1|372|378",
+          "fullName": "信息管理部",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 284,
+          "orgCode": "1|207|273|282|284",
+          "fullName": "湖塘水厂",
+          "parentId": 282,
+          "extendAttrs": {}
+        },
+        {
+          "id": 298,
+          "orgCode": "1|207|298",
+          "fullName": "共青城润泉供水公司",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 314,
+          "orgCode": "1|207|314",
+          "fullName": "修水润泉供水公司",
+          "parentId": 207,
+          "extendAttrs": {}
+        },
+        {
+          "id": 372,
+          "orgCode": "1|372",
+          "fullName": "赣南区域运营管理中心",
+          "parentId": 1,
+          "extendAttrs": {}
+        },
+        {
+          "id": 375,
+          "orgCode": "1|372|375",
+          "fullName": "财务部",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 277,
+          "orgCode": "1|207|273|277",
+          "fullName": "管网工程部",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 278,
+          "orgCode": "1|207|273|278",
+          "fullName": "安装部",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 399,
+          "orgCode": "1|372|379|398|399",
+          "fullName": "项目部",
+          "parentId": 398,
+          "extendAttrs": {}
+        },
+        {
+          "id": 400,
+          "orgCode": "1|372|379|398|400",
+          "fullName": "请假",
+          "parentId": 398,
+          "extendAttrs": {}
+        },
+        {
+          "id": 401,
+          "orgCode": "1|372|379|401",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 402,
+          "orgCode": "1|372|379|402",
+          "fullName": "工会",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 403,
+          "orgCode": "1|372|379|403",
+          "fullName": "农饮部",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 405,
+          "orgCode": "1|372|379|403|405",
+          "fullName": "周田水厂",
+          "parentId": 403,
+          "extendAttrs": {}
+        },
+        {
+          "id": 406,
+          "orgCode": "1|372|379|403|406",
+          "fullName": "站塘加压站",
+          "parentId": 403,
+          "extendAttrs": {}
+        },
+        {
+          "id": 407,
+          "orgCode": "1|372|379|403|407",
+          "fullName": "筠门岭水厂",
+          "parentId": 403,
+          "extendAttrs": {}
+        },
+        {
+          "id": 408,
+          "orgCode": "1|372|379|403|408",
+          "fullName": "珠兰配水厂",
+          "parentId": 403,
+          "extendAttrs": {}
+        },
+        {
+          "id": 409,
+          "orgCode": "1|372|379|409",
+          "fullName": "精准扶贫工作队",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 411,
+          "orgCode": "1|372|410|411",
+          "fullName": "公司领导",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 412,
+          "orgCode": "1|372|410|412",
+          "fullName": "财务部",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 422,
+          "orgCode": "1|372|410|422",
+          "fullName": "生产技术安监部",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 423,
+          "orgCode": "1|372|410|422|423",
+          "fullName": "第二水厂",
+          "parentId": 422,
+          "extendAttrs": {}
+        },
+        {
+          "id": 424,
+          "orgCode": "1|372|410|422|424",
+          "fullName": "龙井水厂",
+          "parentId": 422,
+          "extendAttrs": {}
+        },
+        {
+          "id": 425,
+          "orgCode": "1|372|410|422|425",
+          "fullName": "金鸡水厂",
+          "parentId": 422,
+          "extendAttrs": {}
+        },
+        {
+          "id": 444,
+          "orgCode": "1|372|438|444",
+          "fullName": "客户服务部",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 395,
+          "orgCode": "1|372|379|392|395",
+          "fullName": "白鹅配水厂",
+          "parentId": 392,
+          "extendAttrs": {}
+        },
+        {
+          "id": 446,
+          "orgCode": "1|372|438|446",
+          "fullName": "监察审计部",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 447,
+          "orgCode": "1|372|438|447",
+          "fullName": "生产技术安监部",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 449,
+          "orgCode": "1|372|438|447|449",
+          "fullName": "屏山水厂",
+          "parentId": 447,
+          "extendAttrs": {}
+        },
+        {
+          "id": 450,
+          "orgCode": "1|372|438|447|450",
+          "fullName": "大由水厂",
+          "parentId": 447,
+          "extendAttrs": {}
+        },
+        {
+          "id": 451,
+          "orgCode": "1|372|438|451",
+          "fullName": "水质检测中心",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 452,
+          "orgCode": "1|372|438|452",
+          "fullName": "其他",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 453,
+          "orgCode": "1|372|438|452|453",
+          "fullName": "临时工",
+          "parentId": 452,
+          "extendAttrs": {}
+        },
+        {
+          "id": 454,
+          "orgCode": "1|372|438|452|454",
+          "fullName": "停薪留职",
+          "parentId": 452,
+          "extendAttrs": {}
+        },
+        {
+          "id": 456,
+          "orgCode": "1|372|438|455|456",
+          "fullName": "办公室",
+          "parentId": 455,
+          "extendAttrs": {}
+        },
+        {
+          "id": 458,
+          "orgCode": "1|372|438|457|458",
+          "fullName": "公司领导",
+          "parentId": 457,
+          "extendAttrs": {}
+        },
+        {
+          "id": 460,
+          "orgCode": "1|372|459|460",
+          "fullName": "公司领导",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 461,
+          "orgCode": "1|372|459|461",
+          "fullName": "财务部",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 462,
+          "orgCode": "1|372|459|462",
+          "fullName": "综合管理部",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 463,
+          "orgCode": "1|372|459|463",
+          "fullName": "管网工程部",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 464,
+          "orgCode": "1|372|459|464",
+          "fullName": "安装部",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 465,
+          "orgCode": "1|372|459|465",
+          "fullName": "客户服务部",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 466,
+          "orgCode": "1|372|459|465|466",
+          "fullName": "龙华营业厅",
+          "parentId": 465,
+          "extendAttrs": {}
+        },
+        {
+          "id": 470,
+          "orgCode": "1|372|459|470",
+          "fullName": "生产技术安监部",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 472,
+          "orgCode": "1|372|459|472",
+          "fullName": "水质检测中心",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 396,
+          "orgCode": "1|372|379|392|396",
+          "fullName": "庄口配水厂",
+          "parentId": 392,
+          "extendAttrs": {}
+        },
+        {
+          "id": 473,
+          "orgCode": "1|372|459|473",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 397,
+          "orgCode": "1|372|379|397",
+          "fullName": "水质检测中心",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 475,
+          "orgCode": "1|372|474|475",
+          "fullName": "公司领导",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 476,
+          "orgCode": "1|372|474|476",
+          "fullName": "财务部",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 477,
+          "orgCode": "1|372|474|477",
+          "fullName": "综合管理部",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 478,
+          "orgCode": "1|372|474|478",
+          "fullName": "工程技术部",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 479,
+          "orgCode": "1|372|474|479",
+          "fullName": "安装部",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 487,
+          "orgCode": "1|372|474|487",
+          "fullName": "其他",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 493,
+          "orgCode": "1|372|491|493",
+          "fullName": "财务部",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 496,
+          "orgCode": "1|372|491|496",
+          "fullName": "安装部",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 497,
+          "orgCode": "1|372|491|497",
+          "fullName": "客户服务部",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 498,
+          "orgCode": "1|372|491|497|498",
+          "fullName": "缴费营业厅",
+          "parentId": 497,
+          "extendAttrs": {}
+        },
+        {
+          "id": 410,
+          "orgCode": "1|372|410",
+          "fullName": "信丰润泉供水公司",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 398,
+          "orgCode": "1|372|379|398",
+          "fullName": "其他",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 459,
+          "orgCode": "1|372|459",
+          "fullName": "南康润泉供水公司",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 457,
+          "orgCode": "1|372|438|457",
+          "fullName": "农村供水分公司",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 474,
+          "orgCode": "1|372|474",
+          "fullName": "龙南润泉供水公司",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 392,
+          "orgCode": "1|372|379|392",
+          "fullName": "生产技术安监部",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 394,
+          "orgCode": "1|372|379|392|394",
+          "fullName": "会昌润泉水厂",
+          "parentId": 392,
+          "extendAttrs": {}
+        },
+        {
+          "id": 426,
+          "orgCode": "1|372|410|422|426",
+          "fullName": "九渡水厂",
+          "parentId": 422,
+          "extendAttrs": {}
+        },
+        {
+          "id": 427,
+          "orgCode": "1|372|410|422|427",
+          "fullName": "安西水厂",
+          "parentId": 422,
+          "extendAttrs": {}
+        },
+        {
+          "id": 428,
+          "orgCode": "1|372|410|422|428",
+          "fullName": "黄泥水厂",
+          "parentId": 422,
+          "extendAttrs": {}
+        },
+        {
+          "id": 429,
+          "orgCode": "1|372|410|422|429",
+          "fullName": "古坡水厂",
+          "parentId": 422,
+          "extendAttrs": {}
+        },
+        {
+          "id": 430,
+          "orgCode": "1|372|410|430",
+          "fullName": "水质检测中心",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 433,
+          "orgCode": "1|372|410|432|433",
+          "fullName": "农饮部",
+          "parentId": 432,
+          "extendAttrs": {}
+        },
+        {
+          "id": 434,
+          "orgCode": "1|372|410|434",
+          "fullName": "其他",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 435,
+          "orgCode": "1|372|410|434|435",
+          "fullName": "停薪留职",
+          "parentId": 434,
+          "extendAttrs": {}
+        },
+        {
+          "id": 436,
+          "orgCode": "1|372|410|434|436",
+          "fullName": "内退",
+          "parentId": 434,
+          "extendAttrs": {}
+        },
+        {
+          "id": 437,
+          "orgCode": "1|372|410|434|437",
+          "fullName": "请假",
+          "parentId": 434,
+          "extendAttrs": {}
+        },
+        {
+          "id": 439,
+          "orgCode": "1|372|438|439",
+          "fullName": "公司领导",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 440,
+          "orgCode": "1|372|438|440",
+          "fullName": "财务部",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 441,
+          "orgCode": "1|372|438|441",
+          "fullName": "综合管理部",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 416,
+          "orgCode": "1|372|410|416",
+          "fullName": "客户服务部",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 442,
+          "orgCode": "1|372|438|442",
+          "fullName": "管网工程部",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 443,
+          "orgCode": "1|372|438|443",
+          "fullName": "安装部",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 467,
+          "orgCode": "1|372|459|465|467",
+          "fullName": "唐江镇政府营业厅",
+          "parentId": 465,
+          "extendAttrs": {}
+        },
+        {
+          "id": 468,
+          "orgCode": "1|372|459|465|468",
+          "fullName": "三江乡政府营业厅",
+          "parentId": 465,
+          "extendAttrs": {}
+        },
+        {
+          "id": 469,
+          "orgCode": "1|372|459|469",
+          "fullName": "监察审计部",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 417,
+          "orgCode": "1|372|410|416|417",
+          "fullName": "大塘埠镇营业厅",
+          "parentId": 416,
+          "extendAttrs": {}
+        },
+        {
+          "id": 480,
+          "orgCode": "1|372|474|480",
+          "fullName": "客户服务部",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 481,
+          "orgCode": "1|372|474|480|481",
+          "fullName": "水费收费室",
+          "parentId": 480,
+          "extendAttrs": {}
+        },
+        {
+          "id": 482,
+          "orgCode": "1|372|474|482",
+          "fullName": "监察审计部",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 483,
+          "orgCode": "1|372|474|483",
+          "fullName": "生产技术安监部",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 485,
+          "orgCode": "1|372|474|485",
+          "fullName": "水质检测中心",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 488,
+          "orgCode": "1|372|474|487|488",
+          "fullName": "退养",
+          "parentId": 487,
+          "extendAttrs": {}
+        },
+        {
+          "id": 489,
+          "orgCode": "1|372|474|487|489",
+          "fullName": "退休",
+          "parentId": 487,
+          "extendAttrs": {}
+        },
+        {
+          "id": 490,
+          "orgCode": "1|372|474|487|490",
+          "fullName": "外借",
+          "parentId": 487,
+          "extendAttrs": {}
+        },
+        {
+          "id": 492,
+          "orgCode": "1|372|491|492",
+          "fullName": "公司领导",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 494,
+          "orgCode": "1|372|491|494",
+          "fullName": "综合管理部",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 495,
+          "orgCode": "1|372|491|495",
+          "fullName": "管网工程部",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 505,
+          "orgCode": "1|372|491|505",
+          "fullName": "其他",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 506,
+          "orgCode": "1|372|491|505|506",
+          "fullName": "请长假",
+          "parentId": 505,
+          "extendAttrs": {}
+        },
+        {
+          "id": 508,
+          "orgCode": "1|372|491|507|508",
+          "fullName": "综合部",
+          "parentId": 507,
+          "extendAttrs": {}
+        },
+        {
+          "id": 509,
+          "orgCode": "1|372|491|509",
+          "fullName": "工会",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 511,
+          "orgCode": "1|372|510|511",
+          "fullName": "公司领导",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 512,
+          "orgCode": "1|372|510|512",
+          "fullName": "财务部",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 513,
+          "orgCode": "1|372|510|513",
+          "fullName": "综合管理部",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 418,
+          "orgCode": "1|372|410|416|418",
+          "fullName": "公司收费大厅",
+          "parentId": 416,
+          "extendAttrs": {}
+        },
+        {
+          "id": 514,
+          "orgCode": "1|372|510|514",
+          "fullName": "运营管理部",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 515,
+          "orgCode": "1|372|510|515",
+          "fullName": "管网工程部",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 516,
+          "orgCode": "1|372|510|516",
+          "fullName": "客户服务中心",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 517,
+          "orgCode": "1|372|510|517",
+          "fullName": "安装部",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 519,
+          "orgCode": "1|372|510|519",
+          "fullName": "生产技术安监部",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 520,
+          "orgCode": "1|372|510|519|520",
+          "fullName": "陈石水厂",
+          "parentId": 519,
+          "extendAttrs": {}
+        },
+        {
+          "id": 521,
+          "orgCode": "1|372|510|519|521",
+          "fullName": "南华水厂",
+          "parentId": 519,
+          "extendAttrs": {}
+        },
+        {
+          "id": 534,
+          "orgCode": "1|533|534",
+          "fullName": "公司领导",
+          "parentId": 533,
+          "extendAttrs": {}
+        },
+        {
+          "id": 419,
+          "orgCode": "1|372|410|416|419",
+          "fullName": "工业园供水管理所",
+          "parentId": 416,
+          "extendAttrs": {}
+        },
+        {
+          "id": 536,
+          "orgCode": "1|533|535|536",
+          "fullName": "有机室",
+          "parentId": 535,
+          "extendAttrs": {}
+        },
+        {
+          "id": 537,
+          "orgCode": "1|533|535|537",
+          "fullName": "无机室",
+          "parentId": 535,
+          "extendAttrs": {}
+        },
+        {
+          "id": 538,
+          "orgCode": "1|533|535|538",
+          "fullName": "微生物室",
+          "parentId": 535,
+          "extendAttrs": {}
+        },
+        {
+          "id": 438,
+          "orgCode": "1|372|438",
+          "fullName": "石城润泉供水公司",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 491,
+          "orgCode": "1|372|491",
+          "fullName": "安远润泉供水公司",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 510,
+          "orgCode": "1|372|510",
+          "fullName": "瑞金润泉供水公司",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 413,
+          "orgCode": "1|372|410|413",
+          "fullName": "综合管理部",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 415,
+          "orgCode": "1|372|410|415",
+          "fullName": "管网工程部",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 420,
+          "orgCode": "1|372|410|420",
+          "fullName": "安装部",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 522,
+          "orgCode": "1|372|510|519|522",
+          "fullName": "红井水厂",
+          "parentId": 519,
+          "extendAttrs": {}
+        },
+        {
+          "id": 523,
+          "orgCode": "1|372|510|523",
+          "fullName": "水质检测中心",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 549,
+          "orgCode": "1|543|549",
+          "fullName": "质安部",
+          "parentId": 543,
+          "extendAttrs": {}
+        },
+        {
+          "id": 550,
+          "orgCode": "1|543|550",
+          "fullName": "监审部",
+          "parentId": 543,
+          "extendAttrs": {}
+        },
+        {
+          "id": 551,
+          "orgCode": "1|543|551",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 543,
+          "extendAttrs": {}
+        },
+        {
+          "id": 552,
+          "orgCode": "1|543|552",
+          "fullName": "工会",
+          "parentId": 543,
+          "extendAttrs": {}
+        },
+        {
+          "id": 553,
+          "orgCode": "1|543|553",
+          "fullName": "综合管理部",
+          "parentId": 543,
+          "extendAttrs": {}
+        },
+        {
+          "id": 578,
+          "orgCode": "1|554|555|572|578",
+          "fullName": "株潭水厂",
+          "parentId": 572,
+          "extendAttrs": {}
+        },
+        {
+          "id": 584,
+          "orgCode": "1|554|555|582|584",
+          "fullName": "内退",
+          "parentId": 582,
+          "extendAttrs": {}
+        },
+        {
+          "id": 585,
+          "orgCode": "1|554|555|582|585",
+          "fullName": "请假",
+          "parentId": 582,
+          "extendAttrs": {}
+        },
+        {
+          "id": 556,
+          "orgCode": "1|554|555|556",
+          "fullName": "公司领导",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 586,
+          "orgCode": "1|554|555|586",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 587,
+          "orgCode": "1|554|555|586|587",
+          "fullName": "办公室",
+          "parentId": 586,
+          "extendAttrs": {}
+        },
+        {
+          "id": 532,
+          "orgCode": "1|372|532",
+          "fullName": "综合管理部",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 527,
+          "orgCode": "1|372|510|527",
+          "fullName": "农村供水分公司",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 554,
+          "orgCode": "1|554",
+          "fullName": "待定区域中心水司",
+          "parentId": 1,
+          "extendAttrs": {}
+        },
+        {
+          "id": 555,
+          "orgCode": "1|554|555",
+          "fullName": "万载润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 557,
+          "orgCode": "1|554|555|557",
+          "fullName": "财务部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 558,
+          "orgCode": "1|554|555|558",
+          "fullName": "综合管理部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 499,
+          "orgCode": "1|372|491|497|499",
+          "fullName": "行政服务中心",
+          "parentId": 497,
+          "extendAttrs": {}
+        },
+        {
+          "id": 500,
+          "orgCode": "1|372|491|500",
+          "fullName": "监察审计部",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 501,
+          "orgCode": "1|372|491|501",
+          "fullName": "生产技术安监部",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 502,
+          "orgCode": "1|372|491|501|502",
+          "fullName": "第一水厂",
+          "parentId": 501,
+          "extendAttrs": {}
+        },
+        {
+          "id": 503,
+          "orgCode": "1|372|491|501|503",
+          "fullName": "第二水厂",
+          "parentId": 501,
+          "extendAttrs": {}
+        },
+        {
+          "id": 524,
+          "orgCode": "1|372|510|524",
+          "fullName": "电站",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 525,
+          "orgCode": "1|372|510|525",
+          "fullName": "其他",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 526,
+          "orgCode": "1|372|510|526",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 528,
+          "orgCode": "1|372|510|527|528",
+          "fullName": "公司领导",
+          "parentId": 527,
+          "extendAttrs": {}
+        },
+        {
+          "id": 529,
+          "orgCode": "1|372|510|527|529",
+          "fullName": "综合部",
+          "parentId": 527,
+          "extendAttrs": {}
+        },
+        {
+          "id": 530,
+          "orgCode": "1|372|510|527|530",
+          "fullName": "其他",
+          "parentId": 527,
+          "extendAttrs": {}
+        },
+        {
+          "id": 531,
+          "orgCode": "1|372|510|531",
+          "fullName": "工会",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 535,
+          "orgCode": "1|533|535",
+          "fullName": "检验检测部",
+          "parentId": 533,
+          "extendAttrs": {}
+        },
+        {
+          "id": 559,
+          "orgCode": "1|554|555|559",
+          "fullName": "运营管理部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 574,
+          "orgCode": "1|554|555|572|574",
+          "fullName": "第二水厂",
+          "parentId": 572,
+          "extendAttrs": {}
+        },
+        {
+          "id": 575,
+          "orgCode": "1|554|555|572|575",
+          "fullName": "罗城水厂",
+          "parentId": 572,
+          "extendAttrs": {}
+        },
+        {
+          "id": 576,
+          "orgCode": "1|554|555|572|576",
+          "fullName": "三兴水厂",
+          "parentId": 572,
+          "extendAttrs": {}
+        },
+        {
+          "id": 577,
+          "orgCode": "1|554|555|572|577",
+          "fullName": "潭埠水厂",
+          "parentId": 572,
+          "extendAttrs": {}
+        },
+        {
+          "id": 504,
+          "orgCode": "1|372|491|504",
+          "fullName": "水质检测中心",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 547,
+          "orgCode": "1|543|547",
+          "fullName": "工程部",
+          "parentId": 543,
+          "extendAttrs": {}
+        },
+        {
+          "id": 548,
+          "orgCode": "1|543|548",
+          "fullName": "市场部",
+          "parentId": 543,
+          "extendAttrs": {}
+        },
+        {
+          "id": 561,
+          "orgCode": "1|554|555|561",
+          "fullName": "客户服务部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 562,
+          "orgCode": "1|554|555|561|562",
+          "fullName": "万载润泉缴费营业厅",
+          "parentId": 561,
+          "extendAttrs": {}
+        },
+        {
+          "id": 563,
+          "orgCode": "1|554|555|561|563",
+          "fullName": "工业园区供水所",
+          "parentId": 561,
+          "extendAttrs": {}
+        },
+        {
+          "id": 544,
+          "orgCode": "1|543|544",
+          "fullName": "公司领导",
+          "parentId": 543,
+          "extendAttrs": {}
+        },
+        {
+          "id": 564,
+          "orgCode": "1|554|555|561|564",
+          "fullName": "三兴供水所",
+          "parentId": 561,
+          "extendAttrs": {}
+        },
+        {
+          "id": 565,
+          "orgCode": "1|554|555|561|565",
+          "fullName": "罗城供水所",
+          "parentId": 561,
+          "extendAttrs": {}
+        },
+        {
+          "id": 566,
+          "orgCode": "1|554|555|561|566",
+          "fullName": "潭埠供水所",
+          "parentId": 561,
+          "extendAttrs": {}
+        },
+        {
+          "id": 567,
+          "orgCode": "1|554|555|561|567",
+          "fullName": "株潭供水所",
+          "parentId": 561,
+          "extendAttrs": {}
+        },
+        {
+          "id": 569,
+          "orgCode": "1|554|555|561|569",
+          "fullName": "行政服务中心",
+          "parentId": 561,
+          "extendAttrs": {}
+        },
+        {
+          "id": 570,
+          "orgCode": "1|554|555|570",
+          "fullName": "安装部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 571,
+          "orgCode": "1|554|555|571",
+          "fullName": "监察审计部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 572,
+          "orgCode": "1|554|555|572",
+          "fullName": "生产技术安监部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 573,
+          "orgCode": "1|554|555|572|573",
+          "fullName": "万载水厂",
+          "parentId": 572,
+          "extendAttrs": {}
+        },
+        {
+          "id": 579,
+          "orgCode": "1|554|555|572|579",
+          "fullName": "黄茅水厂",
+          "parentId": 572,
+          "extendAttrs": {}
+        },
+        {
+          "id": 588,
+          "orgCode": "1|554|555|586|588",
+          "fullName": "工程技术",
+          "parentId": 586,
+          "extendAttrs": {}
+        },
+        {
+          "id": 589,
+          "orgCode": "1|554|555|589",
+          "fullName": "城东片区管理部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 590,
+          "orgCode": "1|554|555|590",
+          "fullName": "二次供水工程部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 591,
+          "orgCode": "1|554|555|591",
+          "fullName": "县城片区管理部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 592,
+          "orgCode": "1|554|555|591|592",
+          "fullName": "工业园供水所",
+          "parentId": 591,
+          "extendAttrs": {}
+        },
+        {
+          "id": 593,
+          "orgCode": "1|554|555|593",
+          "fullName": "株潭片区管理部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 594,
+          "orgCode": "1|554|555|593|594",
+          "fullName": "潭埠供水所",
+          "parentId": 593,
+          "extendAttrs": {}
+        },
+        {
+          "id": 595,
+          "orgCode": "1|554|555|593|595",
+          "fullName": "黄茅供水所",
+          "parentId": 593,
+          "extendAttrs": {}
+        },
+        {
+          "id": 596,
+          "orgCode": "1|554|555|593|596",
+          "fullName": "株潭供水所",
+          "parentId": 593,
+          "extendAttrs": {}
+        },
+        {
+          "id": 598,
+          "orgCode": "1|554|597|598",
+          "fullName": "经理办",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 599,
+          "orgCode": "1|554|597|599",
+          "fullName": "财务部",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 600,
+          "orgCode": "1|554|597|600",
+          "fullName": "综合管理部",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 601,
+          "orgCode": "1|554|597|601",
+          "fullName": "管网工程部",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 602,
+          "orgCode": "1|554|597|602",
+          "fullName": "安装部",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 603,
+          "orgCode": "1|554|597|603",
+          "fullName": "客户服务部",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 604,
+          "orgCode": "1|554|597|604",
+          "fullName": "监察审计部",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 605,
+          "orgCode": "1|554|597|605",
+          "fullName": "生产技术安监部",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 606,
+          "orgCode": "1|554|597|605|606",
+          "fullName": "铜鼓润泉老水厂",
+          "parentId": 605,
+          "extendAttrs": {}
+        },
+        {
+          "id": 607,
+          "orgCode": "1|554|597|605|607",
+          "fullName": "第二水厂",
+          "parentId": 605,
+          "extendAttrs": {}
+        },
+        {
+          "id": 608,
+          "orgCode": "1|554|597|608",
+          "fullName": "水质化验中心",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 609,
+          "orgCode": "1|554|597|609",
+          "fullName": "其他",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 542,
+          "orgCode": "1|533|542",
+          "fullName": "质监部",
+          "parentId": 533,
+          "extendAttrs": {}
+        },
+        {
+          "id": 610,
+          "orgCode": "1|554|597|609|610",
+          "fullName": "项目部",
+          "parentId": 609,
+          "extendAttrs": {}
+        },
+        {
+          "id": 611,
+          "orgCode": "1|554|597|609|611",
+          "fullName": "请假",
+          "parentId": 609,
+          "extendAttrs": {}
+        },
+        {
+          "id": 612,
+          "orgCode": "1|554|597|612",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 614,
+          "orgCode": "1|554|613|614",
+          "fullName": "公司领导",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 615,
+          "orgCode": "1|554|613|615",
+          "fullName": "财务部",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 616,
+          "orgCode": "1|554|613|616",
+          "fullName": "综合管理部",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 617,
+          "orgCode": "1|554|613|617",
+          "fullName": "运营管理部",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 618,
+          "orgCode": "1|554|613|618",
+          "fullName": "管网工程部",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 619,
+          "orgCode": "1|554|613|619",
+          "fullName": "客户服务部",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 621,
+          "orgCode": "1|554|613|619|621",
+          "fullName": "经济发展中心",
+          "parentId": 619,
+          "extendAttrs": {}
+        },
+        {
+          "id": 622,
+          "orgCode": "1|554|613|622",
+          "fullName": "安装部",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 623,
+          "orgCode": "1|554|613|623",
+          "fullName": "监察审计部",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 624,
+          "orgCode": "1|554|613|624",
+          "fullName": "生产技术安监部",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 625,
+          "orgCode": "1|554|613|624|625",
+          "fullName": "县城水厂",
+          "parentId": 624,
+          "extendAttrs": {}
+        },
+        {
+          "id": 545,
+          "orgCode": "1|543|545",
+          "fullName": "财务部",
+          "parentId": 543,
+          "extendAttrs": {}
+        },
+        {
+          "id": 543,
+          "orgCode": "1|543",
+          "fullName": "江西省诚乡给水工程有限公司",
+          "parentId": 1,
+          "extendAttrs": {}
+        },
+        {
+          "id": 613,
+          "orgCode": "1|554|613",
+          "fullName": "上高润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 539,
+          "orgCode": "1|533|539",
+          "fullName": "财务部",
+          "parentId": 533,
+          "extendAttrs": {}
+        },
+        {
+          "id": 540,
+          "orgCode": "1|533|540",
+          "fullName": "综合管理部",
+          "parentId": 533,
+          "extendAttrs": {}
+        },
+        {
+          "id": 541,
+          "orgCode": "1|533|541",
+          "fullName": "研究发展部",
+          "parentId": 533,
+          "extendAttrs": {}
+        },
+        {
+          "id": 546,
+          "orgCode": "1|543|546",
+          "fullName": "综合办公室",
+          "parentId": 543,
+          "extendAttrs": {}
+        },
+        {
+          "id": 635,
+          "orgCode": "1|554|613|635",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 636,
+          "orgCode": "1|554|613|636",
+          "fullName": "工会",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 638,
+          "orgCode": "1|554|637|638",
+          "fullName": "公司领导",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 639,
+          "orgCode": "1|554|637|639",
+          "fullName": "财务部",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 640,
+          "orgCode": "1|554|637|640",
+          "fullName": "综合管理部",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 641,
+          "orgCode": "1|554|637|641",
+          "fullName": "管网工程部",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 642,
+          "orgCode": "1|554|637|642",
+          "fullName": "安装部",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 644,
+          "orgCode": "1|554|637|643|644",
+          "fullName": "泉湖垅营业厅",
+          "parentId": 643,
+          "extendAttrs": {}
+        },
+        {
+          "id": 627,
+          "orgCode": "1|554|613|624|627",
+          "fullName": "第二水厂",
+          "parentId": 624,
+          "extendAttrs": {}
+        },
+        {
+          "id": 645,
+          "orgCode": "1|554|637|643|645",
+          "fullName": "萍钢营业厅",
+          "parentId": 643,
+          "extendAttrs": {}
+        },
+        {
+          "id": 646,
+          "orgCode": "1|554|637|646",
+          "fullName": "监察审计部",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 647,
+          "orgCode": "1|554|637|647",
+          "fullName": "生产技术安监部",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 648,
+          "orgCode": "1|554|637|647|648",
+          "fullName": "冷潭湾水厂",
+          "parentId": 647,
+          "extendAttrs": {}
+        },
+        {
+          "id": 651,
+          "orgCode": "1|554|637|650|651",
+          "fullName": "借调",
+          "parentId": 650,
+          "extendAttrs": {}
+        },
+        {
+          "id": 652,
+          "orgCode": "1|554|637|650|652",
+          "fullName": "退养",
+          "parentId": 650,
+          "extendAttrs": {}
+        },
+        {
+          "id": 654,
+          "orgCode": "1|554|637|650|654",
+          "fullName": "下岗",
+          "parentId": 650,
+          "extendAttrs": {}
+        },
+        {
+          "id": 655,
+          "orgCode": "1|554|637|655",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 657,
+          "orgCode": "1|554|637|656|657",
+          "fullName": "农饮部",
+          "parentId": 656,
+          "extendAttrs": {}
+        },
+        {
+          "id": 659,
+          "orgCode": "1|554|658|659",
+          "fullName": "公司领导",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 660,
+          "orgCode": "1|554|658|660",
+          "fullName": "财务部",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 661,
+          "orgCode": "1|554|658|661",
+          "fullName": "综合管理部",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 662,
+          "orgCode": "1|554|658|662",
+          "fullName": "管网工程部",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 663,
+          "orgCode": "1|554|658|663",
+          "fullName": "安装部",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 683,
+          "orgCode": "1|554|674|680|683",
+          "fullName": "西山加压站",
+          "parentId": 680,
+          "extendAttrs": {}
+        },
+        {
+          "id": 684,
+          "orgCode": "1|554|674|684",
+          "fullName": "安装部",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 628,
+          "orgCode": "1|554|613|624|628",
+          "fullName": "第一水厂",
+          "parentId": 624,
+          "extendAttrs": {}
+        },
+        {
+          "id": 700,
+          "orgCode": "1|554|674|700",
+          "fullName": "稽查部",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 629,
+          "orgCode": "1|554|613|629",
+          "fullName": "水质检测中心",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 702,
+          "orgCode": "1|554|701|702",
+          "fullName": "公司领导",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 703,
+          "orgCode": "1|554|701|703",
+          "fullName": "财务部",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 704,
+          "orgCode": "1|554|701|704",
+          "fullName": "综合管理部",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 705,
+          "orgCode": "1|554|701|705",
+          "fullName": "运营管理部",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 707,
+          "orgCode": "1|554|701|707",
+          "fullName": "客户服务部",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 708,
+          "orgCode": "1|554|701|707|708",
+          "fullName": "珠湖水费缴纳处",
+          "parentId": 707,
+          "extendAttrs": {}
+        },
+        {
+          "id": 722,
+          "orgCode": "1|554|719|722",
+          "fullName": "综合管理部",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 723,
+          "orgCode": "1|554|719|723",
+          "fullName": "管网工程部",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 724,
+          "orgCode": "1|554|719|724",
+          "fullName": "安装部",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 630,
+          "orgCode": "1|554|613|630",
+          "fullName": "其他",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 725,
+          "orgCode": "1|554|719|725",
+          "fullName": "客户服务部",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 726,
+          "orgCode": "1|554|719|725|726",
+          "fullName": "营业厅",
+          "parentId": 725,
+          "extendAttrs": {}
+        },
+        {
+          "id": 728,
+          "orgCode": "1|554|719|728",
+          "fullName": "生产技术安监部",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 729,
+          "orgCode": "1|554|719|728|729",
+          "fullName": "吉星水厂",
+          "parentId": 728,
+          "extendAttrs": {}
+        },
+        {
+          "id": 730,
+          "orgCode": "1|554|719|728|730",
+          "fullName": "黎圩美满水厂",
+          "parentId": 728,
+          "extendAttrs": {}
+        },
+        {
+          "id": 731,
+          "orgCode": "1|554|719|728|731",
+          "fullName": "杨桥殿镇自来水厂",
+          "parentId": 728,
+          "extendAttrs": {}
+        },
+        {
+          "id": 732,
+          "orgCode": "1|554|719|728|732",
+          "fullName": "东腾自来水厂",
+          "parentId": 728,
+          "extendAttrs": {}
+        },
+        {
+          "id": 734,
+          "orgCode": "1|554|719|734",
+          "fullName": "水质检测中心",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 736,
+          "orgCode": "1|554|719|735|736",
+          "fullName": "办公室",
+          "parentId": 735,
+          "extendAttrs": {}
+        },
+        {
+          "id": 738,
+          "orgCode": "1|554|719|737|738",
+          "fullName": "公司领导",
+          "parentId": 737,
+          "extendAttrs": {}
+        },
+        {
+          "id": 745,
+          "orgCode": "1|554|739|745",
+          "fullName": "客户服务部",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 746,
+          "orgCode": "1|554|739|745|746",
+          "fullName": "南城润泉收费大厅",
+          "parentId": 745,
+          "extendAttrs": {}
+        },
+        {
+          "id": 747,
+          "orgCode": "1|554|739|747",
+          "fullName": "安装部",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 637,
+          "orgCode": "1|554|637",
+          "fullName": "湘东润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 656,
+          "orgCode": "1|554|637|656",
+          "fullName": "农村供水分公司",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 701,
+          "orgCode": "1|554|701",
+          "fullName": "农场润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 737,
+          "orgCode": "1|554|719|737",
+          "fullName": "农村供水分公司",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 626,
+          "orgCode": "1|554|613|624|626",
+          "fullName": "钟家渡水厂",
+          "parentId": 624,
+          "extendAttrs": {}
+        },
+        {
+          "id": 633,
+          "orgCode": "1|554|613|630|633",
+          "fullName": "停薪留职",
+          "parentId": 630,
+          "extendAttrs": {}
+        },
+        {
+          "id": 666,
+          "orgCode": "1|554|658|666",
+          "fullName": "监察审计部",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 667,
+          "orgCode": "1|554|658|667",
+          "fullName": "生产技术安监部",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 668,
+          "orgCode": "1|554|658|667|668",
+          "fullName": "桑海润泉水厂",
+          "parentId": 667,
+          "extendAttrs": {}
+        },
+        {
+          "id": 669,
+          "orgCode": "1|554|658|669",
+          "fullName": "水质检测中心",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 670,
+          "orgCode": "1|554|658|670",
+          "fullName": "其他",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 671,
+          "orgCode": "1|554|658|671",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 672,
+          "orgCode": "1|554|658|672",
+          "fullName": "工会",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 673,
+          "orgCode": "1|554|658|673",
+          "fullName": "化验室",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 675,
+          "orgCode": "1|554|674|675",
+          "fullName": "公司领导",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 677,
+          "orgCode": "1|554|674|677",
+          "fullName": "综合管理部",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 678,
+          "orgCode": "1|554|674|678",
+          "fullName": "运营管理部",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 679,
+          "orgCode": "1|554|674|679",
+          "fullName": "管网工程部",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 680,
+          "orgCode": "1|554|674|680",
+          "fullName": "客户服务部",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 649,
+          "orgCode": "1|554|637|649",
+          "fullName": "水质检测中心",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 681,
+          "orgCode": "1|554|674|680|681",
+          "fullName": "上新建缴费营业厅",
+          "parentId": 680,
+          "extendAttrs": {}
+        },
+        {
+          "id": 685,
+          "orgCode": "1|554|674|685",
+          "fullName": "监察审计部",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 687,
+          "orgCode": "1|554|674|686|687",
+          "fullName": "大塘水厂",
+          "parentId": 686,
+          "extendAttrs": {}
+        },
+        {
+          "id": 688,
+          "orgCode": "1|554|674|686|688",
+          "fullName": "联圩水厂",
+          "parentId": 686,
+          "extendAttrs": {}
+        },
+        {
+          "id": 689,
+          "orgCode": "1|554|674|686|689",
+          "fullName": "生米水厂",
+          "parentId": 686,
+          "extendAttrs": {}
+        },
+        {
+          "id": 690,
+          "orgCode": "1|554|674|686|690",
+          "fullName": "石埠水厂",
+          "parentId": 686,
+          "extendAttrs": {}
+        },
+        {
+          "id": 691,
+          "orgCode": "1|554|674|686|691",
+          "fullName": "石岗水厂",
+          "parentId": 686,
+          "extendAttrs": {}
+        },
+        {
+          "id": 692,
+          "orgCode": "1|554|674|686|692",
+          "fullName": "铁河水厂",
+          "parentId": 686,
+          "extendAttrs": {}
+        },
+        {
+          "id": 693,
+          "orgCode": "1|554|674|686|693",
+          "fullName": "象山水厂",
+          "parentId": 686,
+          "extendAttrs": {}
+        },
+        {
+          "id": 695,
+          "orgCode": "1|554|674|686|695",
+          "fullName": "下新建水厂",
+          "parentId": 686,
+          "extendAttrs": {}
+        },
+        {
+          "id": 696,
+          "orgCode": "1|554|674|686|696",
+          "fullName": "廿十四联圩水厂",
+          "parentId": 686,
+          "extendAttrs": {}
+        },
+        {
+          "id": 697,
+          "orgCode": "1|554|674|697",
+          "fullName": "水质检测中心",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 698,
+          "orgCode": "1|554|674|698",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 699,
+          "orgCode": "1|554|674|699",
+          "fullName": "顾问组",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 709,
+          "orgCode": "1|554|701|707|709",
+          "fullName": "朱港水费缴纳处",
+          "parentId": 707,
+          "extendAttrs": {}
+        },
+        {
+          "id": 710,
+          "orgCode": "1|554|701|707|710",
+          "fullName": "成新水费缴纳处",
+          "parentId": 707,
+          "extendAttrs": {}
+        },
+        {
+          "id": 711,
+          "orgCode": "1|554|701|711",
+          "fullName": "安装部",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 713,
+          "orgCode": "1|554|701|713",
+          "fullName": "生产技术安监部",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 714,
+          "orgCode": "1|554|701|713|714",
+          "fullName": "成新水厂",
+          "parentId": 713,
+          "extendAttrs": {}
+        },
+        {
+          "id": 715,
+          "orgCode": "1|554|701|713|715",
+          "fullName": "朱港水厂",
+          "parentId": 713,
+          "extendAttrs": {}
+        },
+        {
+          "id": 716,
+          "orgCode": "1|554|701|713|716",
+          "fullName": "珠湖水厂",
+          "parentId": 713,
+          "extendAttrs": {}
+        },
+        {
+          "id": 717,
+          "orgCode": "1|554|701|717",
+          "fullName": "水质检测中心",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 718,
+          "orgCode": "1|554|701|718",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 720,
+          "orgCode": "1|554|719|720",
+          "fullName": "公司领导",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 721,
+          "orgCode": "1|554|719|721",
+          "fullName": "财务部",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 740,
+          "orgCode": "1|554|739|740",
+          "fullName": "公司领导",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 741,
+          "orgCode": "1|554|739|741",
+          "fullName": "财务部",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 742,
+          "orgCode": "1|554|739|742",
+          "fullName": "综合管理部",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 743,
+          "orgCode": "1|554|739|743",
+          "fullName": "运营管理部",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 744,
+          "orgCode": "1|554|739|744",
+          "fullName": "管网工程部",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 751,
+          "orgCode": "1|554|739|749|751",
+          "fullName": "第二水厂",
+          "parentId": 749,
+          "extendAttrs": {}
+        },
+        {
+          "id": 768,
+          "orgCode": "1|554|762|767|768",
+          "fullName": "安装大队",
+          "parentId": 767,
+          "extendAttrs": {}
+        },
+        {
+          "id": 650,
+          "orgCode": "1|554|637|650",
+          "fullName": "其他",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 769,
+          "orgCode": "1|554|762|767|769",
+          "fullName": "报装科",
+          "parentId": 767,
+          "extendAttrs": {}
+        },
+        {
+          "id": 772,
+          "orgCode": "1|554|762|771|772",
+          "fullName": "宜黄供水收费大厅",
+          "parentId": 771,
+          "extendAttrs": {}
+        },
+        {
+          "id": 674,
+          "orgCode": "1|554|674",
+          "fullName": "新建润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 664,
+          "orgCode": "1|554|658|664",
+          "fullName": "客户服务部",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 719,
+          "orgCode": "1|554|719",
+          "fullName": "东乡润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 739,
+          "orgCode": "1|554|739",
+          "fullName": "南城润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 631,
+          "orgCode": "1|554|613|630|631",
+          "fullName": "内退",
+          "parentId": 630,
+          "extendAttrs": {}
+        },
+        {
+          "id": 632,
+          "orgCode": "1|554|613|630|632",
+          "fullName": "项目部",
+          "parentId": 630,
+          "extendAttrs": {}
+        },
+        {
+          "id": 665,
+          "orgCode": "1|554|658|664|665",
+          "fullName": "桑海润泉供水有限责任公司客服中心",
+          "parentId": 664,
+          "extendAttrs": {}
+        },
+        {
+          "id": 756,
+          "orgCode": "1|554|739|753|756",
+          "fullName": "外借",
+          "parentId": 753,
+          "extendAttrs": {}
+        },
+        {
+          "id": 757,
+          "orgCode": "1|554|739|753|757",
+          "fullName": "临时工",
+          "parentId": 753,
+          "extendAttrs": {}
+        },
+        {
+          "id": 759,
+          "orgCode": "1|554|739|758|759",
+          "fullName": "综合办",
+          "parentId": 758,
+          "extendAttrs": {}
+        },
+        {
+          "id": 760,
+          "orgCode": "1|554|739|758|760",
+          "fullName": "财务部",
+          "parentId": 758,
+          "extendAttrs": {}
+        },
+        {
+          "id": 761,
+          "orgCode": "1|554|739|761",
+          "fullName": "工会",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 763,
+          "orgCode": "1|554|762|763",
+          "fullName": "公司领导",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 764,
+          "orgCode": "1|554|762|764",
+          "fullName": "财务部",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 765,
+          "orgCode": "1|554|762|765",
+          "fullName": "综合管理部",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 766,
+          "orgCode": "1|554|762|766",
+          "fullName": "管网工程部",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 767,
+          "orgCode": "1|554|762|767",
+          "fullName": "安装部",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 770,
+          "orgCode": "1|554|762|767|770",
+          "fullName": "维修大队",
+          "parentId": 767,
+          "extendAttrs": {}
+        },
+        {
+          "id": 753,
+          "orgCode": "1|554|739|753",
+          "fullName": "其他",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 771,
+          "orgCode": "1|554|762|771",
+          "fullName": "客户服务部",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 774,
+          "orgCode": "1|554|762|773|774",
+          "fullName": "稽查大队",
+          "parentId": 773,
+          "extendAttrs": {}
+        },
+        {
+          "id": 775,
+          "orgCode": "1|554|762|775",
+          "fullName": "生产技术安监部",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 776,
+          "orgCode": "1|554|762|775|776",
+          "fullName": "宜黄老水厂",
+          "parentId": 775,
+          "extendAttrs": {}
+        },
+        {
+          "id": 777,
+          "orgCode": "1|554|762|775|777",
+          "fullName": "第二水厂",
+          "parentId": 775,
+          "extendAttrs": {}
+        },
+        {
+          "id": 778,
+          "orgCode": "1|554|762|775|777|778",
+          "fullName": "生产部",
+          "parentId": 777,
+          "extendAttrs": {}
+        },
+        {
+          "id": 779,
+          "orgCode": "1|554|762|775|779",
+          "fullName": "第三水厂",
+          "parentId": 775,
+          "extendAttrs": {}
+        },
+        {
+          "id": 780,
+          "orgCode": "1|554|762|775|780",
+          "fullName": "污水厂",
+          "parentId": 775,
+          "extendAttrs": {}
+        },
+        {
+          "id": 782,
+          "orgCode": "1|554|762|775|782",
+          "fullName": "用水管理所",
+          "parentId": 775,
+          "extendAttrs": {}
+        },
+        {
+          "id": 783,
+          "orgCode": "1|554|762|783",
+          "fullName": "水质检测中心",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 784,
+          "orgCode": "1|554|762|784",
+          "fullName": "其他",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 785,
+          "orgCode": "1|554|762|784|785",
+          "fullName": "退养",
+          "parentId": 784,
+          "extendAttrs": {}
+        },
+        {
+          "id": 786,
+          "orgCode": "1|554|762|784|786",
+          "fullName": "请假",
+          "parentId": 784,
+          "extendAttrs": {}
+        },
+        {
+          "id": 787,
+          "orgCode": "1|554|762|787",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 788,
+          "orgCode": "1|554|762|787|788",
+          "fullName": "办公室",
+          "parentId": 787,
+          "extendAttrs": {}
+        },
+        {
+          "id": 791,
+          "orgCode": "1|554|789|791",
+          "fullName": "财务部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 792,
+          "orgCode": "1|554|789|792",
+          "fullName": "综合管理部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 793,
+          "orgCode": "1|554|789|793",
+          "fullName": "管网工程部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 794,
+          "orgCode": "1|554|789|794",
+          "fullName": "安装部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 795,
+          "orgCode": "1|554|789|795",
+          "fullName": "客户服务部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 796,
+          "orgCode": "1|554|789|796",
+          "fullName": "监察审计部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 797,
+          "orgCode": "1|554|789|797",
+          "fullName": "生产技术安监部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 799,
+          "orgCode": "1|554|789|797|799",
+          "fullName": "第二水厂",
+          "parentId": 797,
+          "extendAttrs": {}
+        },
+        {
+          "id": 754,
+          "orgCode": "1|554|739|753|754",
+          "fullName": "内退",
+          "parentId": 753,
+          "extendAttrs": {}
+        },
+        {
+          "id": 800,
+          "orgCode": "1|554|789|797|800",
+          "fullName": "工业园供水（一体机）",
+          "parentId": 797,
+          "extendAttrs": {}
+        },
+        {
+          "id": 801,
+          "orgCode": "1|554|789|797|801",
+          "fullName": "工业园区一体化水厂",
+          "parentId": 797,
+          "extendAttrs": {}
+        },
+        {
+          "id": 802,
+          "orgCode": "1|554|789|797|802",
+          "fullName": "新水厂",
+          "parentId": 797,
+          "extendAttrs": {}
+        },
+        {
+          "id": 803,
+          "orgCode": "1|554|789|803",
+          "fullName": "水质检测中心",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 804,
+          "orgCode": "1|554|789|804",
+          "fullName": "其他",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 805,
+          "orgCode": "1|554|789|804|805",
+          "fullName": "请假",
+          "parentId": 804,
+          "extendAttrs": {}
+        },
+        {
+          "id": 806,
+          "orgCode": "1|554|789|804|806",
+          "fullName": "退休",
+          "parentId": 804,
+          "extendAttrs": {}
+        },
+        {
+          "id": 808,
+          "orgCode": "1|554|789|808",
+          "fullName": "工程安装部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 809,
+          "orgCode": "1|554|789|809",
+          "fullName": "稽查维修部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 810,
+          "orgCode": "1|554|789|810",
+          "fullName": "行政部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 812,
+          "orgCode": "1|554|811|812",
+          "fullName": "公司领导",
+          "parentId": 811,
+          "extendAttrs": {}
+        },
+        {
+          "id": 813,
+          "orgCode": "1|554|811|813",
+          "fullName": "监察审计委员会",
+          "parentId": 811,
+          "extendAttrs": {}
+        },
+        {
+          "id": 814,
+          "orgCode": "1|554|811|814",
+          "fullName": "综合管理部",
+          "parentId": 811,
+          "extendAttrs": {}
+        },
+        {
+          "id": 815,
+          "orgCode": "1|554|811|815",
+          "fullName": "工程技术部",
+          "parentId": 811,
+          "extendAttrs": {}
+        },
+        {
+          "id": 816,
+          "orgCode": "1|554|811|816",
+          "fullName": "客户服务部",
+          "parentId": 811,
+          "extendAttrs": {}
+        },
+        {
+          "id": 762,
+          "orgCode": "1|554|762",
+          "fullName": "宜黄润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 789,
+          "orgCode": "1|554|789",
+          "fullName": "广昌润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 811,
+          "orgCode": "1|554|811",
+          "fullName": "资溪润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 748,
+          "orgCode": "1|554|739|748",
+          "fullName": "监察审计部",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 752,
+          "orgCode": "1|554|739|752",
+          "fullName": "水质检测中心",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 755,
+          "orgCode": "1|554|739|753|755",
+          "fullName": "请假",
+          "parentId": 753,
+          "extendAttrs": {}
+        },
+        {
+          "id": 844,
+          "orgCode": "1|554|825|843|844",
+          "fullName": "办公室",
+          "parentId": 843,
+          "extendAttrs": {}
+        },
+        {
+          "id": 864,
+          "orgCode": "1|554|848|861|864",
+          "fullName": "小屋岭水厂",
+          "parentId": 861,
+          "extendAttrs": {}
+        },
+        {
+          "id": 865,
+          "orgCode": "1|554|848|861|865",
+          "fullName": "中心化验室",
+          "parentId": 861,
+          "extendAttrs": {}
+        },
+        {
+          "id": 866,
+          "orgCode": "1|554|848|866",
+          "fullName": "安装公司",
+          "parentId": 848,
+          "extendAttrs": {}
+        },
+        {
+          "id": 868,
+          "orgCode": "1|554|848|867|868",
+          "fullName": "财务部",
+          "parentId": 867,
+          "extendAttrs": {}
+        },
+        {
+          "id": 869,
+          "orgCode": "1|554|848|867|869",
+          "fullName": "综合办",
+          "parentId": 867,
+          "extendAttrs": {}
+        },
+        {
+          "id": 822,
+          "orgCode": "1|554|811|822",
+          "fullName": "其他",
+          "parentId": 811,
+          "extendAttrs": {}
+        },
+        {
+          "id": 870,
+          "orgCode": "1|554|848|870",
+          "fullName": "其他",
+          "parentId": 848,
+          "extendAttrs": {}
+        },
+        {
+          "id": 871,
+          "orgCode": "1|554|848|870|871",
+          "fullName": "停薪留职",
+          "parentId": 870,
+          "extendAttrs": {}
+        },
+        {
+          "id": 872,
+          "orgCode": "1|554|848|870|872",
+          "fullName": "内退",
+          "parentId": 870,
+          "extendAttrs": {}
+        },
+        {
+          "id": 876,
+          "orgCode": "1|554|875|876",
+          "fullName": "公司领导",
+          "parentId": 875,
+          "extendAttrs": {}
+        },
+        {
+          "id": 877,
+          "orgCode": "1|554|875|877",
+          "fullName": "办公室",
+          "parentId": 875,
+          "extendAttrs": {}
+        },
+        {
+          "id": 878,
+          "orgCode": "1|554|875|878",
+          "fullName": "财务部",
+          "parentId": 875,
+          "extendAttrs": {}
+        },
+        {
+          "id": 879,
+          "orgCode": "1|554|875|879",
+          "fullName": "维修队",
+          "parentId": 875,
+          "extendAttrs": {}
+        },
+        {
+          "id": 880,
+          "orgCode": "1|554|875|880",
+          "fullName": "用水科",
+          "parentId": 875,
+          "extendAttrs": {}
+        },
+        {
+          "id": 881,
+          "orgCode": "1|554|875|881",
+          "fullName": "安装队",
+          "parentId": 875,
+          "extendAttrs": {}
+        },
+        {
+          "id": 882,
+          "orgCode": "1|554|875|882",
+          "fullName": "客户服务部",
+          "parentId": 875,
+          "extendAttrs": {}
+        },
+        {
+          "id": 883,
+          "orgCode": "1|554|875|882|883",
+          "fullName": "收费处",
+          "parentId": 882,
+          "extendAttrs": {}
+        },
+        {
+          "id": 884,
+          "orgCode": "1|554|875|884",
+          "fullName": "生产技术安监部",
+          "parentId": 875,
+          "extendAttrs": {}
+        },
+        {
+          "id": 885,
+          "orgCode": "1|554|875|884|885",
+          "fullName": "水厂",
+          "parentId": 884,
+          "extendAttrs": {}
+        },
+        {
+          "id": 886,
+          "orgCode": "1|554|875|884|886",
+          "fullName": "一厂",
+          "parentId": 884,
+          "extendAttrs": {}
+        },
+        {
+          "id": 887,
+          "orgCode": "1|554|875|884|887",
+          "fullName": "二厂",
+          "parentId": 884,
+          "extendAttrs": {}
+        },
+        {
+          "id": 888,
+          "orgCode": "1|554|875|884|888",
+          "fullName": "泵房",
+          "parentId": 884,
+          "extendAttrs": {}
+        },
+        {
+          "id": 889,
+          "orgCode": "1|554|875|884|889",
+          "fullName": "泵站",
+          "parentId": 884,
+          "extendAttrs": {}
+        },
+        {
+          "id": 890,
+          "orgCode": "1|554|875|884|890",
+          "fullName": "化验室",
+          "parentId": 884,
+          "extendAttrs": {}
+        },
+        {
+          "id": 891,
+          "orgCode": "1|554|875|891",
+          "fullName": "其他",
+          "parentId": 875,
+          "extendAttrs": {}
+        },
+        {
+          "id": 892,
+          "orgCode": "1|554|875|891|892",
+          "fullName": "内退",
+          "parentId": 891,
+          "extendAttrs": {}
+        },
+        {
+          "id": 893,
+          "orgCode": "1|554|875|891|893",
+          "fullName": "请假",
+          "parentId": 891,
+          "extendAttrs": {}
+        },
+        {
+          "id": 894,
+          "orgCode": "1|554|875|891|894",
+          "fullName": "退休",
+          "parentId": 891,
+          "extendAttrs": {}
+        },
+        {
+          "id": 896,
+          "orgCode": "1|554|895|896",
+          "fullName": "公司领导",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 897,
+          "orgCode": "1|554|895|897",
+          "fullName": "综合管理部",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 898,
+          "orgCode": "1|554|895|898",
+          "fullName": "财务部",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 899,
+          "orgCode": "1|554|895|899",
+          "fullName": "运营管理部",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 904,
+          "orgCode": "1|554|895|904",
+          "fullName": "监察审计部",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 905,
+          "orgCode": "1|554|895|905",
+          "fullName": "生产技术部",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 906,
+          "orgCode": "1|554|895|905|906",
+          "fullName": "文港水厂",
+          "parentId": 905,
+          "extendAttrs": {}
+        },
+        {
+          "id": 907,
+          "orgCode": "1|554|895|907",
+          "fullName": "水质检测中心",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 908,
+          "orgCode": "1|554|895|908",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 919,
+          "orgCode": "1|554|909|919",
+          "fullName": "客服部",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 823,
+          "orgCode": "1|554|811|822|823",
+          "fullName": "请假",
+          "parentId": 822,
+          "extendAttrs": {}
+        },
+        {
+          "id": 920,
+          "orgCode": "1|554|909|920",
+          "fullName": "生产部",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 825,
+          "orgCode": "1|554|825",
+          "fullName": "临川润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 895,
+          "orgCode": "1|554|895",
+          "fullName": "进贤润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 909,
+          "orgCode": "1|554|909",
+          "fullName": "莲花润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 818,
+          "orgCode": "1|554|811|818",
+          "fullName": "生产运营部",
+          "parentId": 811,
+          "extendAttrs": {}
+        },
+        {
+          "id": 819,
+          "orgCode": "1|554|811|818|819",
+          "fullName": "沙苑水厂",
+          "parentId": 818,
+          "extendAttrs": {}
+        },
+        {
+          "id": 820,
+          "orgCode": "1|554|811|818|820",
+          "fullName": "第二水厂",
+          "parentId": 818,
+          "extendAttrs": {}
+        },
+        {
+          "id": 821,
+          "orgCode": "1|554|811|821",
+          "fullName": "水质检测中心",
+          "parentId": 811,
+          "extendAttrs": {}
+        },
+        {
+          "id": 867,
+          "orgCode": "1|554|848|867",
+          "fullName": "城乡一体化供建设项目部",
+          "parentId": 848,
+          "extendAttrs": {}
+        },
+        {
+          "id": 824,
+          "orgCode": "1|554|811|824",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 811,
+          "extendAttrs": {}
+        },
+        {
+          "id": 830,
+          "orgCode": "1|554|825|830",
+          "fullName": "安装维护部",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 842,
+          "orgCode": "1|554|825|837|842",
+          "fullName": "退休",
+          "parentId": 837,
+          "extendAttrs": {}
+        },
+        {
+          "id": 843,
+          "orgCode": "1|554|825|843",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 834,
+          "orgCode": "1|554|825|833|834",
+          "fullName": "临川润泉水厂",
+          "parentId": 833,
+          "extendAttrs": {}
+        },
+        {
+          "id": 835,
+          "orgCode": "1|554|825|833|834|835",
+          "fullName": "生产技术部",
+          "parentId": 834,
+          "extendAttrs": {}
+        },
+        {
+          "id": 837,
+          "orgCode": "1|554|825|837",
+          "fullName": "其他",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 838,
+          "orgCode": "1|554|825|837|838",
+          "fullName": "病休",
+          "parentId": 837,
+          "extendAttrs": {}
+        },
+        {
+          "id": 839,
+          "orgCode": "1|554|825|837|839",
+          "fullName": "请假",
+          "parentId": 837,
+          "extendAttrs": {}
+        },
+        {
+          "id": 840,
+          "orgCode": "1|554|825|837|840",
+          "fullName": "借调",
+          "parentId": 837,
+          "extendAttrs": {}
+        },
+        {
+          "id": 841,
+          "orgCode": "1|554|825|837|841",
+          "fullName": "内退",
+          "parentId": 837,
+          "extendAttrs": {}
+        },
+        {
+          "id": 845,
+          "orgCode": "1|554|825|845",
+          "fullName": "稽查部",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 846,
+          "orgCode": "1|554|825|846",
+          "fullName": "营销部",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 847,
+          "orgCode": "1|554|825|846|847",
+          "fullName": "临川营业厅",
+          "parentId": 846,
+          "extendAttrs": {}
+        },
+        {
+          "id": 850,
+          "orgCode": "1|554|848|850",
+          "fullName": "办公室",
+          "parentId": 848,
+          "extendAttrs": {}
+        },
+        {
+          "id": 851,
+          "orgCode": "1|554|848|851",
+          "fullName": "生产技术股",
+          "parentId": 848,
+          "extendAttrs": {}
+        },
+        {
+          "id": 852,
+          "orgCode": "1|554|848|852",
+          "fullName": "营销公司",
+          "parentId": 848,
+          "extendAttrs": {}
+        },
+        {
+          "id": 853,
+          "orgCode": "1|554|848|852|853",
+          "fullName": "营销公司监察大队",
+          "parentId": 852,
+          "extendAttrs": {}
+        },
+        {
+          "id": 854,
+          "orgCode": "1|554|848|852|854",
+          "fullName": "营销公司收费中心",
+          "parentId": 852,
+          "extendAttrs": {}
+        },
+        {
+          "id": 855,
+          "orgCode": "1|554|848|852|854|855",
+          "fullName": "城北收费厅",
+          "parentId": 854,
+          "extendAttrs": {}
+        },
+        {
+          "id": 857,
+          "orgCode": "1|554|848|852|854|857",
+          "fullName": "中心收费厅",
+          "parentId": 854,
+          "extendAttrs": {}
+        },
+        {
+          "id": 831,
+          "orgCode": "1|554|825|831",
+          "fullName": "客户服务部",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 858,
+          "orgCode": "1|554|848|852|858",
+          "fullName": "营销公司维修一所",
+          "parentId": 852,
+          "extendAttrs": {}
+        },
+        {
+          "id": 859,
+          "orgCode": "1|554|848|852|859",
+          "fullName": "营销公司维修二所",
+          "parentId": 852,
+          "extendAttrs": {}
+        },
+        {
+          "id": 860,
+          "orgCode": "1|554|848|852|860",
+          "fullName": "营销公司校表探漏所",
+          "parentId": 852,
+          "extendAttrs": {}
+        },
+        {
+          "id": 861,
+          "orgCode": "1|554|848|861",
+          "fullName": "水厂",
+          "parentId": 848,
+          "extendAttrs": {}
+        },
+        {
+          "id": 862,
+          "orgCode": "1|554|848|861|862",
+          "fullName": "供水公司县水厂",
+          "parentId": 861,
+          "extendAttrs": {}
+        },
+        {
+          "id": 863,
+          "orgCode": "1|554|848|861|863",
+          "fullName": "污水处理厂",
+          "parentId": 861,
+          "extendAttrs": {}
+        },
+        {
+          "id": 873,
+          "orgCode": "1|554|848|870|873",
+          "fullName": "退休",
+          "parentId": 870,
+          "extendAttrs": {}
+        },
+        {
+          "id": 874,
+          "orgCode": "1|554|848|874",
+          "fullName": "污水泵站",
+          "parentId": 848,
+          "extendAttrs": {}
+        },
+        {
+          "id": 901,
+          "orgCode": "1|554|895|901",
+          "fullName": "营销部",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 902,
+          "orgCode": "1|554|895|902",
+          "fullName": "安装部",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 903,
+          "orgCode": "1|554|895|903",
+          "fullName": "抢修部",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 910,
+          "orgCode": "1|554|909|910",
+          "fullName": "公司领导",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 911,
+          "orgCode": "1|554|909|911",
+          "fullName": "综合管理部",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 912,
+          "orgCode": "1|554|909|912",
+          "fullName": "办公室",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 913,
+          "orgCode": "1|554|909|913",
+          "fullName": "安装部",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 914,
+          "orgCode": "1|554|909|914",
+          "fullName": "财务部",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 915,
+          "orgCode": "1|554|909|915",
+          "fullName": "行政部",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 832,
+          "orgCode": "1|554|825|832",
+          "fullName": "监察审计部",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 917,
+          "orgCode": "1|554|909|917",
+          "fullName": "技术部",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 918,
+          "orgCode": "1|554|909|918",
+          "fullName": "监察部",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 921,
+          "orgCode": "1|554|909|921",
+          "fullName": "维修部",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 922,
+          "orgCode": "1|554|909|922",
+          "fullName": "城乡供水一体化建设项目部",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 933,
+          "orgCode": "1|554|927|933",
+          "fullName": "收费中心",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 923,
+          "orgCode": "1|554|909|922|923",
+          "fullName": "办公室",
+          "parentId": 922,
+          "extendAttrs": {}
+        },
+        {
+          "id": 924,
+          "orgCode": "1|554|909|922|924",
+          "fullName": "财务部",
+          "parentId": 922,
+          "extendAttrs": {}
+        },
+        {
+          "id": 926,
+          "orgCode": "1|554|909|926",
+          "fullName": "借出",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 928,
+          "orgCode": "1|554|927|928",
+          "fullName": "公司领导",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 929,
+          "orgCode": "1|554|927|929",
+          "fullName": "办公室",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 930,
+          "orgCode": "1|554|927|930",
+          "fullName": "工会",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 931,
+          "orgCode": "1|554|927|931",
+          "fullName": "财务科",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 932,
+          "orgCode": "1|554|927|932",
+          "fullName": "劳资科",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 934,
+          "orgCode": "1|554|927|934",
+          "fullName": "稽查科",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 935,
+          "orgCode": "1|554|927|935",
+          "fullName": "规划科",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 937,
+          "orgCode": "1|554|927|937",
+          "fullName": "水质科",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 875,
+          "orgCode": "1|554|875",
+          "fullName": "金溪润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 927,
+          "orgCode": "1|554|927",
+          "fullName": "都昌润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 826,
+          "orgCode": "1|554|825|826",
+          "fullName": "行政部",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 833,
+          "orgCode": "1|554|825|833",
+          "fullName": "生产技术安监部",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 829,
+          "orgCode": "1|554|825|829",
+          "fullName": "管网工程部",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 946,
+          "orgCode": "1|554|927|945|946",
+          "fullName": "农饮部",
+          "parentId": 945,
+          "extendAttrs": {}
+        },
+        {
+          "id": 947,
+          "orgCode": "1|554|927|945|946|947",
+          "fullName": "其他",
+          "parentId": 946,
+          "extendAttrs": {}
+        },
+        {
+          "id": 949,
+          "orgCode": "1|554|927|949",
+          "fullName": "计生办、妇委会",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 986,
+          "orgCode": "1|554|927|986",
+          "fullName": "项目部",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 79,
+          "orgCode": "1|20|27|79",
+          "fullName": "景德镇市汇景水业培训中心",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 135,
+          "orgCode": "1|20|135",
+          "fullName": "浮梁润泉供水公司",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 165,
+          "orgCode": "1|20|165",
+          "fullName": "德兴润泉供水公司",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 950,
+          "orgCode": "1|207|252|950",
+          "fullName": "农村供水分公司",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 951,
+          "orgCode": "1|207|298|951",
+          "fullName": "农村供水分公司",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 336,
+          "orgCode": "1|207|314|336",
+          "fullName": "农村供水分公司",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 954,
+          "orgCode": "1|372|459|954",
+          "fullName": "农村供水分公司",
+          "parentId": 459,
+          "extendAttrs": {}
+        },
+        {
+          "id": 955,
+          "orgCode": "1|372|474|955",
+          "fullName": "农村供水分公司",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 533,
+          "orgCode": "1|533",
+          "fullName": "水科学检测",
+          "parentId": 1,
+          "extendAttrs": {}
+        },
+        {
+          "id": 961,
+          "orgCode": "1|554|555|961",
+          "fullName": "农村供水分公司",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 597,
+          "orgCode": "1|554|597",
+          "fullName": "铜鼓润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 962,
+          "orgCode": "1|554|597|962",
+          "fullName": "农村供水分公司",
+          "parentId": 597,
+          "extendAttrs": {}
+        },
+        {
+          "id": 963,
+          "orgCode": "1|554|613|963",
+          "fullName": "农村供水分公司",
+          "parentId": 613,
+          "extendAttrs": {}
+        },
+        {
+          "id": 658,
+          "orgCode": "1|554|658",
+          "fullName": "桑海润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 973,
+          "orgCode": "1|20|27|64|973",
+          "fullName": "待定部门",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 964,
+          "orgCode": "1|554|658|964",
+          "fullName": "农村供水分公司",
+          "parentId": 658,
+          "extendAttrs": {}
+        },
+        {
+          "id": 966,
+          "orgCode": "1|554|701|966",
+          "fullName": "农村供水分公司",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 968,
+          "orgCode": "1|554|762|968",
+          "fullName": "农村供水分公司",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 970,
+          "orgCode": "1|554|825|970",
+          "fullName": "农村供水分公司",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 848,
+          "orgCode": "1|554|848",
+          "fullName": "永新润泉供水公司",
+          "parentId": 554,
+          "extendAttrs": {}
+        },
+        {
+          "id": 945,
+          "orgCode": "1|554|927|945",
+          "fullName": "农村供水分公司",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 18,
+          "orgCode": "1|3|18",
+          "fullName": "党群工作部",
+          "parentId": 3,
+          "extendAttrs": {}
+        },
+        {
+          "id": 24,
+          "orgCode": "1|20|24",
+          "fullName": "监察审计部",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 32,
+          "orgCode": "1|20|27|32",
+          "fullName": "预算财务部",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 38,
+          "orgCode": "1|20|27|38",
+          "fullName": "景德镇市城乡供水一体化项目部",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 982,
+          "orgCode": "1|372|459|473|982",
+          "fullName": "财务部",
+          "parentId": 473,
+          "extendAttrs": {}
+        },
+        {
+          "id": 977,
+          "orgCode": "1|372|957|977",
+          "fullName": "公司领导",
+          "parentId": 957,
+          "extendAttrs": {}
+        },
+        {
+          "id": 984,
+          "orgCode": "1|372|957|984",
+          "fullName": "项目部",
+          "parentId": 957,
+          "extendAttrs": {}
+        },
+        {
+          "id": 976,
+          "orgCode": "1|554|555|961|976",
+          "fullName": "待定部门",
+          "parentId": 961,
+          "extendAttrs": {}
+        },
+        {
+          "id": 940,
+          "orgCode": "1|554|927|940",
+          "fullName": "安装队",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 938,
+          "orgCode": "1|554|927|938",
+          "fullName": "修理队",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 943,
+          "orgCode": "1|554|927|942|943",
+          "fullName": "南山水厂",
+          "parentId": 942,
+          "extendAttrs": {}
+        },
+        {
+          "id": 985,
+          "orgCode": "1|554|701|718|985",
+          "fullName": "技术材料科",
+          "parentId": 718,
+          "extendAttrs": {}
+        },
+        {
+          "id": 978,
+          "orgCode": "1|554|789|969|978",
+          "fullName": "待定部门",
+          "parentId": 969,
+          "extendAttrs": {}
+        },
+        {
+          "id": 939,
+          "orgCode": "1|554|927|939",
+          "fullName": "供水所",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 942,
+          "orgCode": "1|554|927|942",
+          "fullName": "生产技术安监部",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 944,
+          "orgCode": "1|554|927|942|944",
+          "fullName": "观湖水厂",
+          "parentId": 942,
+          "extendAttrs": {}
+        },
+        {
+          "id": 952,
+          "orgCode": "1|207|343|952",
+          "fullName": "农村供水分公司",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 957,
+          "orgCode": "1|372|957",
+          "fullName": "寻乌润泉供水公司",
+          "parentId": 372,
+          "extendAttrs": {}
+        },
+        {
+          "id": 974,
+          "orgCode": "1|20|27|79|974",
+          "fullName": "待定部门",
+          "parentId": 79,
+          "extendAttrs": {}
+        },
+        {
+          "id": 953,
+          "orgCode": "1|372|379|953",
+          "fullName": "农村供水分公司",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 965,
+          "orgCode": "1|554|674|965",
+          "fullName": "农村供水分公司",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 969,
+          "orgCode": "1|554|789|969",
+          "fullName": "农村供水分公司",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 979,
+          "orgCode": "1|20|135|162|979",
+          "fullName": "公司领导",
+          "parentId": 162,
+          "extendAttrs": {}
+        },
+        {
+          "id": 980,
+          "orgCode": "1|372|459|473|980",
+          "fullName": "综合部",
+          "parentId": 473,
+          "extendAttrs": {}
+        },
+        {
+          "id": 981,
+          "orgCode": "1|372|459|473|981",
+          "fullName": "工程技术部",
+          "parentId": 473,
+          "extendAttrs": {}
+        },
+        {
+          "id": 93,
+          "orgCode": "1|20|27|93",
+          "fullName": "调研室",
+          "parentId": 27,
+          "extendAttrs": {}
+        },
+        {
+          "id": 101,
+          "orgCode": "1|20|95|101",
+          "fullName": "客户服务部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 109,
+          "orgCode": "1|20|95|109",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 119,
+          "orgCode": "1|20|95|117|119",
+          "fullName": "财务部",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 127,
+          "orgCode": "1|20|95|117|127",
+          "fullName": "双田水厂",
+          "parentId": 117,
+          "extendAttrs": {}
+        },
+        {
+          "id": 134,
+          "orgCode": "1|20|95|134",
+          "fullName": "运营管理部",
+          "parentId": 95,
+          "extendAttrs": {}
+        },
+        {
+          "id": 148,
+          "orgCode": "1|20|135|146|148",
+          "fullName": "瓷都自来水工程峙滩水厂",
+          "parentId": 146,
+          "extendAttrs": {}
+        },
+        {
+          "id": 150,
+          "orgCode": "1|20|135|146|150",
+          "fullName": "东河自来水工程瑶里水厂",
+          "parentId": 146,
+          "extendAttrs": {}
+        },
+        {
+          "id": 161,
+          "orgCode": "1|20|135|161",
+          "fullName": "二次供水公司",
+          "parentId": 135,
+          "extendAttrs": {}
+        },
+        {
+          "id": 177,
+          "orgCode": "1|20|165|171|177",
+          "fullName": "潭埠营业厅",
+          "parentId": 171,
+          "extendAttrs": {}
+        },
+        {
+          "id": 185,
+          "orgCode": "1|20|165|181|185",
+          "fullName": "第二水厂",
+          "parentId": 181,
+          "extendAttrs": {}
+        },
+        {
+          "id": 189,
+          "orgCode": "1|20|165|188|189",
+          "fullName": "停薪留职",
+          "parentId": 188,
+          "extendAttrs": {}
+        },
+        {
+          "id": 203,
+          "orgCode": "1|20|199|202|203",
+          "fullName": "润泉水厂",
+          "parentId": 202,
+          "extendAttrs": {}
+        },
+        {
+          "id": 206,
+          "orgCode": "1|20|199|206",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 199,
+          "extendAttrs": {}
+        },
+        {
+          "id": 218,
+          "orgCode": "1|207|214|218",
+          "fullName": "城东营业所",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 228,
+          "orgCode": "1|207|214|228",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 234,
+          "orgCode": "1|207|214|229|234",
+          "fullName": "退休",
+          "parentId": 229,
+          "extendAttrs": {}
+        },
+        {
+          "id": 242,
+          "orgCode": "1|207|214|242",
+          "fullName": "码头净水厂反冲洗",
+          "parentId": 214,
+          "extendAttrs": {}
+        },
+        {
+          "id": 259,
+          "orgCode": "1|207|252|258|259",
+          "fullName": "庐山润泉营销客户服务部",
+          "parentId": 258,
+          "extendAttrs": {}
+        },
+        {
+          "id": 269,
+          "orgCode": "1|207|252|269",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 252,
+          "extendAttrs": {}
+        },
+        {
+          "id": 280,
+          "orgCode": "1|207|273|279|280",
+          "fullName": "德安润泉缴费营业厅",
+          "parentId": 279,
+          "extendAttrs": {}
+        },
+        {
+          "id": 287,
+          "orgCode": "1|207|273|282|287",
+          "fullName": "邹桥水厂",
+          "parentId": 282,
+          "extendAttrs": {}
+        },
+        {
+          "id": 293,
+          "orgCode": "1|207|273|293",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 273,
+          "extendAttrs": {}
+        },
+        {
+          "id": 302,
+          "orgCode": "1|207|298|302",
+          "fullName": "管网工程部",
+          "parentId": 298,
+          "extendAttrs": {}
+        },
+        {
+          "id": 319,
+          "orgCode": "1|207|314|319",
+          "fullName": "管网工程部",
+          "parentId": 314,
+          "extendAttrs": {}
+        },
+        {
+          "id": 322,
+          "orgCode": "1|207|314|320|322",
+          "fullName": "东电缴费营业厅",
+          "parentId": 320,
+          "extendAttrs": {}
+        },
+        {
+          "id": 330,
+          "orgCode": "1|207|314|327|330",
+          "fullName": "山口水厂",
+          "parentId": 327,
+          "extendAttrs": {}
+        },
+        {
+          "id": 341,
+          "orgCode": "1|207|314|340|341",
+          "fullName": "请假",
+          "parentId": 340,
+          "extendAttrs": {}
+        },
+        {
+          "id": 349,
+          "orgCode": "1|207|343|349",
+          "fullName": "客户服务部",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 359,
+          "orgCode": "1|207|343|355|359",
+          "fullName": "江上大屋水厂",
+          "parentId": 355,
+          "extendAttrs": {}
+        },
+        {
+          "id": 381,
+          "orgCode": "1|372|379|381",
+          "fullName": "财务部",
+          "parentId": 379,
+          "extendAttrs": {}
+        },
+        {
+          "id": 388,
+          "orgCode": "1|372|379|385|388",
+          "fullName": "南街收费厅",
+          "parentId": 385,
+          "extendAttrs": {}
+        },
+        {
+          "id": 393,
+          "orgCode": "1|372|379|392|393",
+          "fullName": "莲塘加压站（含庄埠配水厂）",
+          "parentId": 392,
+          "extendAttrs": {}
+        },
+        {
+          "id": 404,
+          "orgCode": "1|372|379|403|404",
+          "fullName": "麻州水厂",
+          "parentId": 403,
+          "extendAttrs": {}
+        },
+        {
+          "id": 414,
+          "orgCode": "1|372|410|414",
+          "fullName": "运营管理部",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 421,
+          "orgCode": "1|372|410|421",
+          "fullName": "监察审计部",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 431,
+          "orgCode": "1|372|410|431",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 445,
+          "orgCode": "1|372|438|444|445",
+          "fullName": "石城润泉水费收缴处",
+          "parentId": 444,
+          "extendAttrs": {}
+        },
+        {
+          "id": 448,
+          "orgCode": "1|372|438|447|448",
+          "fullName": "县城水厂",
+          "parentId": 447,
+          "extendAttrs": {}
+        },
+        {
+          "id": 455,
+          "orgCode": "1|372|438|455",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 438,
+          "extendAttrs": {}
+        },
+        {
+          "id": 471,
+          "orgCode": "1|372|459|470|471",
+          "fullName": "龙华水厂",
+          "parentId": 470,
+          "extendAttrs": {}
+        },
+        {
+          "id": 484,
+          "orgCode": "1|372|474|483|484",
+          "fullName": "龙南润泉水厂",
+          "parentId": 483,
+          "extendAttrs": {}
+        },
+        {
+          "id": 486,
+          "orgCode": "1|372|474|486",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 474,
+          "extendAttrs": {}
+        },
+        {
+          "id": 507,
+          "orgCode": "1|372|491|507",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 518,
+          "orgCode": "1|372|510|518",
+          "fullName": "监察审计部",
+          "parentId": 510,
+          "extendAttrs": {}
+        },
+        {
+          "id": 560,
+          "orgCode": "1|554|555|560",
+          "fullName": "管网工程部",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 568,
+          "orgCode": "1|554|555|561|568",
+          "fullName": "黄茅供水所",
+          "parentId": 561,
+          "extendAttrs": {}
+        },
+        {
+          "id": 580,
+          "orgCode": "1|554|555|572|580",
+          "fullName": "工业园水厂",
+          "parentId": 572,
+          "extendAttrs": {}
+        },
+        {
+          "id": 581,
+          "orgCode": "1|554|555|581",
+          "fullName": "水质检测中心",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 582,
+          "orgCode": "1|554|555|582",
+          "fullName": "其他",
+          "parentId": 555,
+          "extendAttrs": {}
+        },
+        {
+          "id": 583,
+          "orgCode": "1|554|555|582|583",
+          "fullName": "借用",
+          "parentId": 582,
+          "extendAttrs": {}
+        },
+        {
+          "id": 971,
+          "orgCode": "1|20|27|44|971",
+          "fullName": "待定部门",
+          "parentId": 44,
+          "extendAttrs": {}
+        },
+        {
+          "id": 972,
+          "orgCode": "1|20|27|52|972",
+          "fullName": "待定部门",
+          "parentId": 52,
+          "extendAttrs": {}
+        },
+        {
+          "id": 61,
+          "orgCode": "1|20|27|58|61",
+          "fullName": "维修改造科",
+          "parentId": 58,
+          "extendAttrs": {}
+        },
+        {
+          "id": 84,
+          "orgCode": "1|20|27|83|84",
+          "fullName": "公司领导",
+          "parentId": 83,
+          "extendAttrs": {}
+        },
+        {
+          "id": 749,
+          "orgCode": "1|554|739|749",
+          "fullName": "生产技术安监部",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 750,
+          "orgCode": "1|554|739|749|750",
+          "fullName": "县老水厂（麻源水厂）",
+          "parentId": 749,
+          "extendAttrs": {}
+        },
+        {
+          "id": 758,
+          "orgCode": "1|554|739|758",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 836,
+          "orgCode": "1|554|825|836",
+          "fullName": "水质检测中心",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 849,
+          "orgCode": "1|554|848|849",
+          "fullName": "公司领导",
+          "parentId": 848,
+          "extendAttrs": {}
+        },
+        {
+          "id": 856,
+          "orgCode": "1|554|848|852|854|856",
+          "fullName": "小屋岭收费厅",
+          "parentId": 854,
+          "extendAttrs": {}
+        },
+        {
+          "id": 956,
+          "orgCode": "1|372|491|956",
+          "fullName": "农村供水分公司",
+          "parentId": 491,
+          "extendAttrs": {}
+        },
+        {
+          "id": 967,
+          "orgCode": "1|554|739|967",
+          "fullName": "农村供水分公司",
+          "parentId": 739,
+          "extendAttrs": {}
+        },
+        {
+          "id": 51,
+          "orgCode": "1|20|27|44|51",
+          "fullName": "新洋湖水厂",
+          "parentId": 44,
+          "extendAttrs": {}
+        },
+        {
+          "id": 72,
+          "orgCode": "1|20|27|64|72",
+          "fullName": "户表改造办公室",
+          "parentId": 64,
+          "extendAttrs": {}
+        },
+        {
+          "id": 989,
+          "orgCode": "1|372|510|526|989",
+          "fullName": "办公室",
+          "parentId": 526,
+          "extendAttrs": {}
+        },
+        {
+          "id": 634,
+          "orgCode": "1|554|613|630|634",
+          "fullName": "临时工",
+          "parentId": 630,
+          "extendAttrs": {}
+        },
+        {
+          "id": 643,
+          "orgCode": "1|554|637|643",
+          "fullName": "客户服务部",
+          "parentId": 637,
+          "extendAttrs": {}
+        },
+        {
+          "id": 653,
+          "orgCode": "1|554|637|650|653",
+          "fullName": "病假",
+          "parentId": 650,
+          "extendAttrs": {}
+        },
+        {
+          "id": 676,
+          "orgCode": "1|554|674|676",
+          "fullName": "财务部",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 682,
+          "orgCode": "1|554|674|680|682",
+          "fullName": "下新建缴费营业厅",
+          "parentId": 680,
+          "extendAttrs": {}
+        },
+        {
+          "id": 686,
+          "orgCode": "1|554|674|686",
+          "fullName": "生产技术安监部",
+          "parentId": 674,
+          "extendAttrs": {}
+        },
+        {
+          "id": 694,
+          "orgCode": "1|554|674|686|694",
+          "fullName": "上新建水厂",
+          "parentId": 686,
+          "extendAttrs": {}
+        },
+        {
+          "id": 706,
+          "orgCode": "1|554|701|706",
+          "fullName": "管网工程部",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 712,
+          "orgCode": "1|554|701|712",
+          "fullName": "监察审计部",
+          "parentId": 701,
+          "extendAttrs": {}
+        },
+        {
+          "id": 727,
+          "orgCode": "1|554|719|727",
+          "fullName": "监察审计部",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 733,
+          "orgCode": "1|554|719|728|733",
+          "fullName": "第二水厂",
+          "parentId": 728,
+          "extendAttrs": {}
+        },
+        {
+          "id": 773,
+          "orgCode": "1|554|762|773",
+          "fullName": "监察审计部",
+          "parentId": 762,
+          "extendAttrs": {}
+        },
+        {
+          "id": 781,
+          "orgCode": "1|554|762|775|781",
+          "fullName": "供水车间",
+          "parentId": 775,
+          "extendAttrs": {}
+        },
+        {
+          "id": 790,
+          "orgCode": "1|554|789|790",
+          "fullName": "公司领导",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 798,
+          "orgCode": "1|554|789|797|798",
+          "fullName": "北门水厂",
+          "parentId": 797,
+          "extendAttrs": {}
+        },
+        {
+          "id": 807,
+          "orgCode": "1|554|789|807",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 789,
+          "extendAttrs": {}
+        },
+        {
+          "id": 817,
+          "orgCode": "1|554|811|816|817",
+          "fullName": "收费厅",
+          "parentId": 816,
+          "extendAttrs": {}
+        },
+        {
+          "id": 827,
+          "orgCode": "1|554|825|827",
+          "fullName": "财务部",
+          "parentId": 825,
+          "extendAttrs": {}
+        },
+        {
+          "id": 900,
+          "orgCode": "1|554|895|900",
+          "fullName": "管网工程部",
+          "parentId": 895,
+          "extendAttrs": {}
+        },
+        {
+          "id": 916,
+          "orgCode": "1|554|909|916",
+          "fullName": "化验中心",
+          "parentId": 909,
+          "extendAttrs": {}
+        },
+        {
+          "id": 925,
+          "orgCode": "1|554|909|922|925",
+          "fullName": "技术部",
+          "parentId": 922,
+          "extendAttrs": {}
+        },
+        {
+          "id": 936,
+          "orgCode": "1|554|927|936",
+          "fullName": "材料科",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 941,
+          "orgCode": "1|554|927|941",
+          "fullName": "校表室",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 948,
+          "orgCode": "1|554|927|948",
+          "fullName": "给排水安装公司",
+          "parentId": 927,
+          "extendAttrs": {}
+        },
+        {
+          "id": 1,
+          "orgCode": "1",
+          "fullName": "江西省水务集团有限公司",
+          "parentId": 0,
+          "extendAttrs": {}
+        },
+        {
+          "id": 432,
+          "orgCode": "1|372|410|432",
+          "fullName": "农村供水分公司",
+          "parentId": 410,
+          "extendAttrs": {}
+        },
+        {
+          "id": 368,
+          "orgCode": "1|207|343|368",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 343,
+          "extendAttrs": {}
+        },
+        {
+          "id": 620,
+          "orgCode": "1|554|613|619|620",
+          "fullName": "上高润泉供水",
+          "parentId": 619,
+          "extendAttrs": {}
+        },
+        {
+          "id": 987,
+          "orgCode": "1|20|987",
+          "fullName": "咨询委员会",
+          "parentId": 20,
+          "extendAttrs": {}
+        },
+        {
+          "id": 735,
+          "orgCode": "1|554|719|735",
+          "fullName": "城乡一体化供水建设项目部",
+          "parentId": 719,
+          "extendAttrs": {}
+        },
+        {
+          "id": 828,
+          "orgCode": "1|554|825|828",
+          "fullName": "综合管理部",
+          "parentId": 825,
+          "extendAttrs": {}
+        }
+      ],
+      "parentPathOrgList": [
+        {
+          "id": 1,
+          "orgCode": "1",
+          "fullName": "江西省水务集团有限公司",
+          "parentId": 0,
+          "extendAttrs": {}
+        }
+      ]
+    }
+  ],
+  "token": "----------.-----------------.-------------------------thk"
+}

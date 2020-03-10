@@ -1,0 +1,213 @@
+{
+  "resultCode": "0050000",
+  "message": {
+    "description": "查询成功"
+  },
+  "count": 3,
+  "queryData": [
+    {
+      "tag": [
+        "dma_tag_dev_sub_lc"
+      ],
+      "basic": {
+        "org": {
+          "id": 95,
+          "fullName": "乐平润泉供水公司"
+        },
+        "manu": {
+          "id": 1001,
+          "fullName": "设备厂商-和达"
+        },
+        "name": "测试大表3",
+        "model": {
+          "id": "1ac096b1-8593-47e9-ba75-369b915c0ea6",
+          "refId": "1bb3d0f3-d487-4ac1-b1ef-06af8cdae7f8"
+        },
+        "cmCode": "8201159",
+        "enable": true,
+        "hdCode": "8201159",
+        "assertCode": "8201159",
+        "protocolId": "10"
+      },
+      "extend": {
+        "purpose": "0",
+        "meterType": "0",
+        "powerType": "0",
+        "devAssDays": 0,
+        "monitorType": "0",
+        "sceneStatus": "0",
+        "monitorPoint": {
+          "basic": {
+            "area": {
+              "id": "area-95-0001",
+              "refId": "9d0c62d8-b029-42d0-bfdf-337b5135c83f"
+            },
+            "name": "测试站点3",
+            "type": "0",
+            "enable": true,
+            "latitude": "30.00",
+            "longitude": "120.00",
+            "alarmPhone": "13000000000",
+            "installDate": "2018-06-23 00:00:00:000",
+            "displayInMap": true,
+            "pressureLowerLimit": 0,
+            "pressureUpperLimit": 0
+          },
+          "modelId": "monitorPoint",
+          "id": "c4d8f63d-80ca-46b4-8466-e2e3b035256b",
+          "creator": 7,
+          "createTime": "2018-08-20 13:28:50",
+          "operateTime": "2018-08-20 13:28:50",
+          "active": true
+        },
+        "networkLevel": "0",
+        "batteryAssDay": 0,
+        "isKeyCustomer": true,
+        "transmitterModel": "0"
+      },
+      "modelId": "DEV-SUB-LC",
+      "id": "5e67b2f3-359e-406e-ad7e-81649acbfca1",
+      "modelCode": "DEV-SUB-LC",
+      "creator": 7,
+      "createTime": "2018-08-20 13:28:50",
+      "operateTime": "2018-08-20 13:28:50",
+      "active": true
+    },
+    {
+      "tag": [
+        "dma_tag_dev_sub_lc"
+      ],
+      "basic": {
+        "org": {
+          "id": 95,
+          "fullName": "乐平润泉供水公司"
+        },
+        "manu": {
+          "id": 1001,
+          "fullName": "设备厂商-和达"
+        },
+        "name": "测试大表5",
+        "model": {
+          "id": "1ac096b1-8593-47e9-ba75-369b915c0ea6",
+          "refId": "dff2286d-075a-4228-9794-822e669a2732"
+        },
+        "cmCode": "8201161",
+        "enable": true,
+        "hdCode": "8201161",
+        "assertCode": "8201161",
+        "protocolId": "10"
+      },
+      "extend": {
+        "purpose": "0",
+        "meterType": "0",
+        "powerType": "0",
+        "devAssDays": 0,
+        "monitorType": "0",
+        "sceneStatus": "0",
+        "monitorPoint": {
+          "basic": {
+            "area": {
+              "id": "area-95-0002",
+              "refId": "6f7c8822-5a74-4dfb-8193-883155d18564"
+            },
+            "name": "测试站点5",
+            "type": "0",
+            "enable": true,
+            "latitude": "30.00",
+            "longitude": "120.00",
+            "alarmPhone": "13000000000",
+            "installDate": "2018-06-23 00:00:00:000",
+            "displayInMap": true,
+            "pressureLowerLimit": 0,
+            "pressureUpperLimit": 0
+          },
+          "modelId": "monitorPoint",
+          "id": "8a77f4fa-c9f8-45fe-9da2-b047fdd98ed6",
+          "creator": 7,
+          "createTime": "2018-08-20 13:28:50",
+          "operateTime": "2018-08-20 13:28:50",
+          "active": true
+        },
+        "networkLevel": "0",
+        "batteryAssDay": 0,
+        "isKeyCustomer": true,
+        "transmitterModel": "0"
+      },
+      "modelId": "DEV-SUB-LC",
+      "id": "5a861b6c-29de-4726-89fe-abec9ece6c3b",
+      "modelCode": "DEV-SUB-LC",
+      "creator": 7,
+      "createTime": "2018-08-20 13:28:50",
+      "operateTime": "2018-08-20 13:28:50",
+      "active": true
+    },
+    {
+      "tag": [
+        "dma_tag_dev_sub_lc"
+      ],
+      "basic": {
+        "org": {
+          "id": 95,
+          "fullName": "乐平润泉供水公司"
+        },
+        "manu": {
+          "id": 1001,
+          "fullName": "设备厂商-和达"
+        },
+        "name": "测试大表4",
+        "model": {
+          "id": "1ac096b1-8593-47e9-ba75-369b915c0ea6",
+          "refId": "913660a4-24f0-4bfc-88c2-e596df9d85b1"
+        },
+        "cmCode": "8201160",
+        "enable": true,
+        "hdCode": "8201160",
+        "assertCode": "8201160",
+        "protocolId": "10"
+      },
+      "extend": {
+        "purpose": "0",
+        "meterType": "0",
+        "powerType": "0",
+        "devAssDays": 0,
+        "monitorType": "0",
+        "sceneStatus": "0",
+        "monitorPoint": {
+          "basic": {
+            "area": {
+              "id": "area-95-0001",
+              "refId": "07179e13-69d7-41ad-a608-2e802ddc6492"
+            },
+            "name": "测试站点4",
+            "type": "0",
+            "enable": true,
+            "latitude": "30.00",
+            "longitude": "120.00",
+            "alarmPhone": "13000000000",
+            "installDate": "2018-06-23 00:00:00:000",
+            "displayInMap": true,
+            "pressureLowerLimit": 0,
+            "pressureUpperLimit": 0
+          },
+          "modelId": "monitorPoint",
+          "id": "6079b963-8834-4143-b2dc-49e9c8c74c4a",
+          "creator": 7,
+          "createTime": "2018-08-20 13:28:50",
+          "operateTime": "2018-08-20 13:28:50",
+          "active": true
+        },
+        "networkLevel": "0",
+        "batteryAssDay": 0,
+        "isKeyCustomer": true,
+        "transmitterModel": "0"
+      },
+      "modelId": "DEV-SUB-LC",
+      "id": "22438516-92d2-470a-a9a2-1a949337812f",
+      "modelCode": "DEV-SUB-LC",
+      "creator": 7,
+      "createTime": "2018-08-20 13:28:50",
+      "operateTime": "2018-08-20 13:28:50",
+      "active": true
+    }
+  ]
+}
