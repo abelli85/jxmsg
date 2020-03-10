@@ -64,7 +64,7 @@ class ProfileTask {
 
     @Scheduled(fixedRate = 30 * 86400 * 1000L, initialDelay = 20 * 1000L)
     fun retrieveProfileOnce() {
-        val post = RequestBuilder.post(authUrl!!)
+        val post = RequestBuilder.get(authUrl!!)
                 .addHeader(key1, v1)
                 .addHeader(key2, v2)
                 .addHeader(key3, v3)
@@ -82,7 +82,7 @@ class ProfileTask {
             val text = it.entity.content.reader(Charsets.UTF_8).readText()
 
             if (it.statusLine.statusCode <= HttpStatus.SC_MULTIPLE_CHOICES) {
-                lgr.info("status: ${it.statusLine}\n...${text.takeLast(300)}")
+                lgr.info("status: ${it.statusLine}\n...${text}")
             } else {
                 lgr.info("status failure: ${it.statusLine}\n${text}")
             }
