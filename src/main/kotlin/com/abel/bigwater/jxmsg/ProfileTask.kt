@@ -85,7 +85,7 @@ class ProfileTask {
     @Value("\${jxwg.firmName}")
     var _firmName: String? = null
 
-    @Scheduled(fixedRate = 30 * 86400 * 1000L, initialDelay = 20 * 1000L)
+    @Scheduled(fixedRate = 30 * 86400 * 1000L, initialDelay = 30 * 1000L)
     fun retrieveProfileOnce() {
         val auth = authUser()
         if (auth?.token?.isNotBlank() == true) {
@@ -93,7 +93,7 @@ class ProfileTask {
                     firmId = _firmId,
                     firmName = _firmName,
                     pageNo = 1,
-                    pageSize = 50), 0, auth.token!!)
+                    pageSize = 10), 0, auth.token!!)
         } else {
             lgr.error("invalid token from auth server: ... ${auth}")
         }
@@ -142,11 +142,18 @@ class ProfileTask {
                 params.add(BasicNameValuePair("pageNo", "${++pageNo}"))
                 if (req.pageSize != null) params.add(BasicNameValuePair("pageSize", req.pageSize.toString()))
 
-                val get = HttpGet("${req.uri}?${URLEncodedUtils.format(params, Charsets.UTF_8)}")
-                get.setHeader("x-id-token", token)
-                get.setHeader("Content-Type", "application/json;charset=UTF-8")
-                get.setHeader("Accept", "application/json;charset=UTF-8")
-                get.setHeader("Accept-Language", "zh-CN, en-US")
+                val get = RequestBuilder.get("${req.uri}?${URLEncodedUtils.format(params, Charsets.UTF_8)}").apply {
+                    addHeader(key1, v1)
+                    addHeader(key2, v2)
+                    addHeader(key3, v3)
+                    addHeader(key4, v4)
+                    addHeader(key5, v5)
+                    addHeader(key6, v6)
+                    addHeader("X-ID-TOKEN", token)
+                    addHeader("Content-Type", "application/json;charset=UTF-8")
+                    addHeader("Accept", "application/json;charset=UTF-8")
+                    addHeader("Accept-Language", "zh-CN, en-US")
+                }.build()
 
                 try {
                     val hc = HttpClients.createDefault()
@@ -155,6 +162,7 @@ class ProfileTask {
                     lgr.info("Response: ${resp}")
 
                     val text = resp.entity.content.bufferedReader(Charsets.UTF_8).readText()
+                    lgr.info("profile list: ${text}")
                     if (resp.statusLine.statusCode == HttpStatus.SC_OK) {
                         val wmr = ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false).readValue<WaterMeterResponse>(text)
                         cnt = wmr.count?.toInt() ?: 0
