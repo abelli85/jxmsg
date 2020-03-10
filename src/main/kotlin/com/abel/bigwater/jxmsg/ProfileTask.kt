@@ -4,13 +4,15 @@ import com.abel.bigwater.data.mapper.MeterMapper
 import com.abel.bigwater.jxwg.AuthUserResult
 import com.abel.bigwater.jxwg.DmaMeterReq
 import com.abel.bigwater.jxwg.model.WaterMeterResponse
+import com.abel.bigwater.model.JsonHelper
+import com.abel.bigwater.model.MeterStatus
 import com.abel.bigwater.model.zone.ZoneMeter
+import com.alibaba.fastjson.JSON
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import org.apache.http.HttpStatus
 import org.apache.http.NameValuePair
-import org.apache.http.client.methods.HttpGet
 import org.apache.http.client.methods.RequestBuilder
 import org.apache.http.client.utils.URLEncodedUtils
 import org.apache.http.impl.client.HttpClients
@@ -195,26 +197,44 @@ class ProfileTask {
         wmr.queryData?.forEachIndexed { idx, wm ->
             val mid = "${_firmCode}${wm.basic!!.cmCode}"
             val eid = "${_firmCode}${wm.basic!!.cmCode}"
-            lgr.info("Update Meter[$idx:${req.firmName}]: ${mid}-${wm.basic?.name}-${wm.basic?.cmCode} (${wm.extend?.monitorPoint?.basic?.longitude}, ${wm.extend?.monitorPoint?.basic?.latitude})")
+            lgr.info("Update Meter[$idx:${req.firmName}]: ${mid} ~ ${wm.basic?.name} ~ ${wm.basic?.cmCode} (${wm.extend?.monitorPoint?.basic?.longitude}, ${wm.extend?.monitorPoint?.basic?.latitude})")
 
             ZoneMeter().apply {
                 this.id = mid
                 this.meterId = mid
                 this.extId = eid
                 this.name = wm.basic?.name
+                this.location = wm.basic?.name
 
                 this.userCode = wm.basic?.cmCode
                 this.meterCode = wm.basic?.cmCode
 
-                this.meterLoc = GeometryFactory().createPoint(Coordinate(wm.extend?.monitorPoint?.basic?.latitude!!.toDouble(),
-                        wm.extend?.monitorPoint?.basic?.longitude!!.toDouble())).toText()
+                if (wm.extend?.monitorPoint?.basic?.latitude?.toDouble() != null
+                        && wm.extend?.monitorPoint?.basic?.longitude?.toDoubleOrNull() != null) {
+                    this.meterLoc = GeometryFactory().createPoint(Coordinate(
+                            wm.extend?.monitorPoint?.basic?.latitude!!.toDouble(),
+                            wm.extend?.monitorPoint?.basic?.longitude!!.toDouble())).toText()
+                }
 
+                this.typeId = "CHECK"
+                this.meterStatus = if (wm.active == true) MeterStatus.WORK else MeterStatus.PAUSE
                 this.model = wm.modelCode
                 this.meterBrandId = wm.basic?.manu?.fullName
+                this.remoteBrandId = wm.basic?.manu?.fullName
 
-                this.firmId = req.firmId
+                this.createBy = wm.creatorInfo?.name
+                this.updateBy = wm.modifierInfo?.name
+                if (true == wm.createTime?.isNotBlank()) this.createDate = JsonHelper.parseLocalDate(wm.createTime)
+                if (true == wm.modifyTime?.isNotBlank()) this.updateDate = JsonHelper.parseLocalDate(wm.modifyTime)
+
+                val pch = wm.relation?.find { r -> true == r.metricName?.contains("pressure") }
+                this.rtuId = pch?.device?.id?.take(31)
+                this.remoteMemo = "pre:${pch?.channelNO}"
             }.also {
+                lgr.info("About to persist meter: ${JSON.toJSONString(it, true)}")
                 if (1 > meterMapper!!.updateMeterByValue(it)) {
+                    it.firmId = req.firmId
+
                     meterMapper!!.insertMeter(it)
                 }
             }

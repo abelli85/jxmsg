@@ -85,7 +85,6 @@
     </delete>
 
     <update id="updateMeter" parameterType="com.abel.bigwater.model.zone.ZoneMeter">
-
         UPDATE bw_meter
         <set>
             <if test="userCode != null">
@@ -247,7 +246,6 @@
     </update>
 
     <update id="updateMeterLoc" parameterType="com.abel.bigwater.model.zone.ZoneMeter">
-
         UPDATE bw_meter SET
             meter_loc = ST_GeomFromText(#{meterLoc})
         WHERE meter_id = #{id}
@@ -264,6 +262,100 @@
             </if>
             <if test="meterLoc != null">
                 meter_loc = ST_GeomFromText(#{meterLoc}),
+            </if>
+            <if test="model != null">
+                meter_model = #{model},
+            </if>
+            <if test="typeId != null">
+                meter_type_id = #{typeId},
+            </if>
+            <if test="createBy != null">
+                create_by = #{createBy},
+            </if>
+            <if test="createDate != null">
+                create_date = #{createDate},
+            </if>
+            <if test="updateBy != null">
+                update_by = #{updateBy},
+            </if>
+            <if test="updateDate != null">
+                update_date = #{updateDate},
+            </if>
+            <if test="dmaId != null">
+                dma_id = #{dmaId},
+            </if>
+            <if test="meterBrandId != null">
+                meter_brand_id = #{meterBrandId},
+            </if>
+            <if test="remoteBrandId != null">
+                remote_brand_id = #{remoteBrandId},
+            </if>
+            <if test="rtuId != null">
+                rtu_id = #{rtuId},
+            </if>
+            <if test="pressureRange != null">
+                pressure_range = #{pressureRange},
+            </if>
+            <if test="pressureMaxLimit != null">
+                pressure_max_limit = #{pressureMaxLimit},
+            </if>
+            <if test="pressureMinLimit != null">
+                pressure_min_limit = #{pressureMinLimit},
+            </if>
+            <if test="powerType != null">
+                power_type = #{powerType},
+            </if>
+            <if test="meterStatus != null">
+                meter_status = #{meterStatus},
+            </if>
+            <if test="adminMobile != null">
+                admin_mobile = #{adminMobile},
+            </if>
+            <if test="lastCalib != null">
+                last_calib = #{lastCalib},
+            </if>
+
+            <if test="waterPrice != null">
+                water_price = #{waterPrice},
+            </if>
+            <if test="serviceArea != null">
+                service_area = #{serviceArea},
+            </if>
+            <if test="servicePopulation != null">
+                service_population = #{servicePopulation},
+            </if>
+            <if test="contactNumber != null">
+                contact_number = #{contactNumber},
+            </if>
+            <if test="rtuCode != null">
+                rtu_code = #{rtuCode},
+            </if>
+            <if test="rtuAddr != null">
+                rtu_addr = #{rtuAddr},
+            </if>
+            <if test="rtuInstallDate != null">
+                rtu_install_date = #{rtuInstallDate},
+            </if>
+            <if test="rtuInstallPerson != null">
+                rtu_install_person = #{rtuInstallPerson},
+            </if>
+            <if test="rtuContact != null">
+                rtu_contact = #{rtuContact},
+            </if>
+            <if test="commCard != null">
+                comm_card = #{commCard},
+            </if>
+            <if test="remoteModel != null">
+                remote_model = #{remoteModel},
+            </if>
+            <if test="remoteMemo != null">
+                remote_memo = #{remoteMemo},
+            </if>
+            <if test="commIsp != null">
+                comm_isp = #{commIsp},
+            </if>
+            <if test="memo != null">
+                meter_memo = #{memo},
             </if>
             <if test="firmId != null">
                 firm_id = #{firmId}
