@@ -24,6 +24,8 @@ interface MeterMapper {
 
     fun updateMeterLoc(meter: ZoneMeter): Int
 
+    fun updateMeterByValue(meter: ZoneMeter): Int
+
     /**
      * <pre>
      * <parameterMap type="map" id="meterWhere">

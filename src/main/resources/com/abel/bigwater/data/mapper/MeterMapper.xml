@@ -253,6 +253,25 @@
         WHERE meter_id = #{id}
     </update>
 
+    <update id="updateMeterByValue" parameterType="com.abel.bigwater.model.zone.ZoneMeter">
+        UPDATE bw_meter
+        <set>
+            <if test="name != null">
+                meter_name = #{name},
+            </if>
+            <if test="extId != null">
+                ext_id = #{extId},
+            </if>
+            <if test="meterLoc != null">
+                meter_loc = ST_GeomFromText(#{meterLoc}),
+            </if>
+            <if test="firmId != null">
+                firm_id = #{firmId}
+            </if>
+        </set>
+        WHERE meter_id = #{id}
+    </update>
+
     <select id="selectMeter" parameterType="com.abel.bigmeter.service.MeterParam" resultType="com.abel.bigwater.model.zone.ZoneMeter">
 
         SELECT meter_id as id, user_code AS userCode,

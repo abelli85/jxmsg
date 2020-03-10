@@ -1,0 +1,20 @@
+{
+  "reqList": [
+    {
+      "uri": "http://59.63.182.46:30402/dma/devices/dev_sub_dma",
+      "rsql": "basic.org.id==36",
+      "firmId": "3802",
+      "firmName": "江西水务-乐平供水",
+      "pageNo": 1,
+      "pageSize": 10
+    },
+    {
+      "uri": "http://59.63.182.46:30402/dma/devices/dev_sub_dma",
+      "rsql": "basic.org.id==86",
+      "firmId": "3801",
+      "firmName": "江西水务-临川供水",
+      "pageNo": 1,
+      "pageSize": 10
+    }
+  ]
+}

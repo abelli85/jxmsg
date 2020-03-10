@@ -1,0 +1,11 @@
+{
+  "uri": "http://59.63.182.46:30402/uc/authuser",
+  "authUser": "szzn",
+  "authToken": "18d8f1bdedfcfbf089b1a7199ba18a0f",
+  "userType": 1,
+  "appId": "3c448ed3cb1f57ccada57295fa3c23ae",
+  "appSecret": "d6043e7458617a0c1b2aaaa03a798669",
+  "enterpriseId": "www.szzn.com",
+  "server": "59.63.182.46",
+  "port": 20001
+}
