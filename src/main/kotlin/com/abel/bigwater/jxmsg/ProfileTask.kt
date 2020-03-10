@@ -157,12 +157,12 @@ class ProfileTask {
 
                 try {
                     val hc = HttpClients.createDefault()
-                    lgr.info("About to execute: ${get}")
+                    lgr.info("About to execute ${get} with headers:\n ${get.allHeaders.toList()}")
                     val resp = hc.execute(get)
                     lgr.info("Response: ${resp}")
 
                     val text = resp.entity.content.bufferedReader(Charsets.UTF_8).readText()
-                    lgr.info("profile list: ${text}")
+                    lgr.info("profile list ${resp.statusLine}: ${text}")
                     if (resp.statusLine.statusCode == HttpStatus.SC_OK) {
                         val wmr = ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false).readValue<WaterMeterResponse>(text)
                         cnt = wmr.count?.toInt() ?: 0
