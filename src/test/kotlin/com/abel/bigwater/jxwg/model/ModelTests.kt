@@ -1,10 +1,13 @@
 package com.abel.bigwater.jxwg.model
 
+import com.abel.bigwater.jxmsg.FlowMsg
+import com.alibaba.fastjson.JSON
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import org.junit.jupiter.api.Test
 import org.slf4j.LoggerFactory
+import org.springframework.util.Assert
 
 class ModelTests {
     @Test
@@ -70,6 +73,15 @@ class ModelTests {
                 .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
                 .readValue<WaterMeterResponse>(str)
         lgr.info("parsed: ${resp}\n${ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(resp)}")
+    }
+
+    @Test
+    fun testLeping() {
+        val str = """{"businessKey":"bigmeter","content":{"data":{"forwardFlow":803776,"reverseFlow":2,"reading":-99,"pressure":-99,"valveStatus":-99,"flow":5.519,"voltage":-99},"origin":"1","cmCode":"110040640001"}}"""
+        val msg = JSON.parseObject(str, FlowMsg::class.java)
+        Assert.notNull(msg.content?.cmCode, "meter-code can't be null")
+        Assert.notNull(msg.content?.timestamp, "timestamp can't be null")
+        lgr.info("flow msg: {}", ObjectMapper().writerWithDefaultPrettyPrinter().writeValueAsString(msg))
     }
 
     companion object {

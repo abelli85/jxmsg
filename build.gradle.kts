@@ -3,8 +3,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.springframework.boot") version "2.2.2.RELEASE"
     id("io.spring.dependency-management") version "1.0.8.RELEASE"
-    kotlin("jvm") version "1.3.70"
-    kotlin("plugin.spring") version "1.3.70"
+    kotlin("jvm") version "1.3.72"
+    kotlin("plugin.spring") version "1.3.72"
 }
 
 group = "com.abel.bigwater"
@@ -36,18 +36,19 @@ dependencies {
     implementation("org.apache.kafka:kafka-clients")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.8")
     implementation("org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.1")
     implementation("org.springframework.kafka:spring-kafka")
 
-    implementation("com.alibaba:fastjson:1.2.62")
+    implementation("com.alibaba:fastjson:1.2.73")
     implementation("org.projectlombok:lombok:1.18.12")
-    implementation("joda-time:joda-time:2.10.5")
+    implementation("joda-time:joda-time:2.10.6")
 
     implementation("com.abel:bigmeter-model:1.0")
     implementation("com.abel:bigmeter-webapi:1.0")
 
     developmentOnly("org.springframework.boot:spring-boot-devtools")
-    runtimeOnly("mysql:mysql-connector-java:8.0.19")
+    runtimeOnly("mysql:mysql-connector-java:8.0.21")
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
